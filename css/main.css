@@ -7,6 +7,11 @@ body {
   background: #ecf0f1;
 }
 
+a {
+  color: #ddd;
+  text-decoration: none;
+}
+
 /*****************************************************************************/
 /*
 /* Container
@@ -14,6 +19,10 @@ body {
 /*****************************************************************************/
 .container {
   width: 75%;
+}
+
+.container a {
+  color: #506BA5;
 }
 
 /*****************************************************************************/
@@ -25,6 +34,7 @@ body {
   overflow: hidden;
   background: linear-gradient(to bottom, #3a3a3a 0%, #1e1e1e 100%);
   box-shadow: 0em -1em 1em 1em;
+  display: none;
 }
 
 .navigation nav {
@@ -64,7 +74,8 @@ body {
 .content {
   height: 100%;
   width: 80%;
-  background: #34495e;
+  /*background: #34495e;*/
+  background: #fff;
   margin: 50px auto;
   border-radius: 10px;
   padding: 20px;
@@ -78,11 +89,15 @@ body {
 /*****************************************************************************/
 
 .sidebar {
-  background: #bdc3c7;
+  background: #506BA5;
   position: fixed;
   top: 0;
   right: 0;
   width: 25%;
   height: 100%;
   box-shadow: inset 1em 0 3em -1em rgba(0,0,0,.8);
+}
+
+.sidebar ul {
+  list-style: none;
 }
