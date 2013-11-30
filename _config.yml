@@ -1,4 +1,4 @@
-name: Your New Jekyll Site
+name: brunops.org
 markdown: redcarpet
 pygments: true
 permalink: /:title
