@@ -25,29 +25,36 @@ body {
 .navigation {
   overflow: hidden;
   background: linear-gradient(to bottom, #3a3a3a 0%, #1e1e1e 100%);
+  box-shadow: 0em -1em 1em 1em;
 }
 
 .navigation nav {
+  font-size: 0; /* hack to remove 1px distance between menu items */
   margin-left: 10%;
   display: inline-block;
-  height: 50px;
 }
 
 .navigation a {
   color: #95a5a6;
   text-decoration: none;
+  display: block;
+  font-size: 18px;
+  padding: 15px 25px;
+  height: 100%;
+}
+
+.navigation a:hover {
+  background: #000;
+  box-shadow: inset 0em -1em 1em -0.8em #555
 }
 
 .navigation nav ul {
+  height: 100%;
   padding: 0;
 }
 
 .navigation nav li {
   display: inline-block;
-}
-
-.navigation nav li:after {
-  margin: 0 10px;
 }
 
 /*****************************************************************************/
