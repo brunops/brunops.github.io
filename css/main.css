@@ -30,7 +30,6 @@ a {
   margin: 0 auto;
   overflow: hidden;
   width: 65%;
-  box-shadow: .5em .5em 1em .1em #555;
 }
 
 .navigation nav {
@@ -46,9 +45,7 @@ a {
 }
 
 .navigation nav li {
-  background: linear-gradient(to bottom, #506BA5 0%, #163A86 100%);
   display: inline-block;
-  background: #21489B;
   margin-bottom: 10px;
   border-radius: 5px;
   width: 100%;
@@ -63,10 +60,6 @@ a {
   padding: 10px;
   font-weight: 200;
   height: 100%;
-}
-
-.navigation a:hover {
-  background: #163A86;
 }
 
 /*****************************************************************************/
@@ -93,7 +86,7 @@ a {
   right: 0;
   width: 25%;
   height: 100%;
-  box-shadow: inset 1em 0 3em -1em rgba(0,0,0,.8);
+  box-shadow: inset 1em 0 3em -1em rgba(0,0,0,.6);
   text-align: center;
   color: #eee;
 }
