@@ -15,30 +15,35 @@
   </head>
   <body>
 
-    <div class="site">
-      <div class="header">
-        <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-        <a class="extra" href="/">home</a>
-      </div>
+    <div class="container">
+      <header>
+        <a class="logo" href="/">{{ site.name }}</a>
+        <nav>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </header>
 
-      {{ content }}
-
-      <div class="footer">
-        <div class="contact">
-          <p>
-            Your Name<br />
-            What You Are<br />
-            you@example.com
-          </p>
-        </div>
-        <div class="contact">
-          <p>
-            <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-            <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-          </p>
-        </div>
-      </div>
+      <section class="content">
+        {{ content }}
+      </section>
     </div>
+
+    <aside class="sidebar">
+      <div class="about">
+        <img src="" alt="">
+        <p class="intro"></p>
+      </div>
+      <ul class="social-links">
+        <li><a href="#">Linkedin</a></li>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Email</a></li>
+      </ul>
+    </aside>
 
   </body>
 </html>
