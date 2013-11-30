@@ -48,7 +48,11 @@ a {
 .navigation nav li {
   background: linear-gradient(to bottom, #506BA5 0%, #163A86 100%);
   display: inline-block;
+  background: #21489B;
+  margin-bottom: 10px;
+  border-radius: 5px;
   width: 100%;
+  background: #506BA5;
 }
 
 .navigation a {
@@ -71,13 +75,9 @@ a {
 /*
 /*****************************************************************************/
 .content {
-  /*height: 100%;*/
   width: 80%;
-  /*background: #fff;*/
   margin: 30px auto;
-  /*border-radius: 10px;*/
   padding: 20px;
-  /*box-shadow: 0 3px 10px rgba(0, 0, 0, .3);*/
 }
 
 /*****************************************************************************/
@@ -109,7 +109,7 @@ a {
 .sidebar img {
   border-radius: 75px;
   margin-top: 10%;
-  width: 150px;
+  width: 130px;
 }
 
 /*****************************************************************************/
