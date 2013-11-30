@@ -27,39 +27,42 @@ a {
 /*
 /*****************************************************************************/
 .navigation {
+  margin: 0 auto;
   overflow: hidden;
-  background: linear-gradient(to bottom, #3a3a3a 0%, #1e1e1e 100%);
-  box-shadow: 0em -1em 1em 1em;
-  display: none;
+  width: 65%;
+  box-shadow: .5em .5em 1em .1em #555;
 }
 
 .navigation nav {
   font-size: 0; /* hack to remove 1px distance between menu items */
-  margin-left: 10%;
   display: inline-block;
+  width: 100%;
+}
+
+.navigation nav ul {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.navigation nav li {
+  background: linear-gradient(to bottom, #506BA5 0%, #163A86 100%);
+  display: inline-block;
+  width: 100%;
 }
 
 .navigation a {
   color: #95a5a6;
   text-decoration: none;
   display: block;
-  font-size: 18px;
-  padding: 15px 25px;
+  font-size: 16px;
+  padding: 10px;
+  font-weight: 200;
   height: 100%;
 }
 
 .navigation a:hover {
-  background: #000;
-  box-shadow: inset 0em -1em 1em -0.8em #555
-}
-
-.navigation nav ul {
-  height: 100%;
-  padding: 0;
-}
-
-.navigation nav li {
-  display: inline-block;
+  background: #163A86;
 }
 
 /*****************************************************************************/
@@ -68,13 +71,13 @@ a {
 /*
 /*****************************************************************************/
 .content {
-  height: 100%;
+  /*height: 100%;*/
   width: 80%;
-  background: #fff;
+  /*background: #fff;*/
   margin: 30px auto;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   padding: 20px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+  /*box-shadow: 0 3px 10px rgba(0, 0, 0, .3);*/
 }
 
 /*****************************************************************************/
@@ -92,10 +95,21 @@ a {
   height: 100%;
   box-shadow: inset 1em 0 3em -1em rgba(0,0,0,.8);
   text-align: center;
+  color: #eee;
+}
+
+.sidebar h2 {
+  font-weight: 200;
 }
 
 .sidebar a {
-  color: #ddd;
+  color: #f2f2f2;
+}
+
+.sidebar img {
+  border-radius: 75px;
+  margin-top: 10%;
+  width: 150px;
 }
 
 /*****************************************************************************/
@@ -104,6 +118,7 @@ a {
 /*
 /*****************************************************************************/
 .social-links {
+  margin-top: 20%;
   margin-left: 10%;
   padding: 0;
 }
