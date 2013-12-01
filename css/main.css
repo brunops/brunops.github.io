@@ -125,19 +125,16 @@ a {
   width: 60%;
 }
 
-.navigation nav {
+.navigation ul {
   font-size: 0; /* hack to remove 1px distance between menu items */
   display: inline-block;
   width: 100%;
-}
-
-.navigation nav ul {
   width: 100%;
   height: 100%;
   padding: 0;
 }
 
-.navigation nav li {
+.navigation li {
   display: inline-block;
   margin-bottom: 8px;
   border-radius: 5px;
