@@ -45,9 +45,10 @@ a {
 
 .navigation nav li {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   border-radius: 5px;
   width: 100%;
+  line-height: 16px;
 }
 
 .navigation a {
@@ -97,12 +98,21 @@ a {
   color: #eee;
 }
 
+.sidebar h2,
+.sidebar h4 {
+  font-family: 'Jockey One', sans-serif;
+}
+
 .sidebar h2 {
   font-weight: 100;
   font-size: 36px;
-  font-family: 'Jockey One', sans-serif;
   text-shadow: 0 1px 0 rgba(0,0,0,.6);
-  margin: 5% auto;
+  margin: 5% auto 0 auto;
+  line-height: 40px;
+}
+
+.sidebar h4 {
+  margin-top: 0;
 }
 
 .sidebar h2:hover {
@@ -115,7 +125,7 @@ a {
 
 .sidebar img {
   border-radius: 75px;
-  margin-top: 5%;
+  margin-top: 10%;
   width: 130px;
 }
 
