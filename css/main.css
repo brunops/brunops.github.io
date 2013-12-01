@@ -23,6 +23,99 @@ a {
 
 /*****************************************************************************/
 /*
+/* Content
+/*
+/*****************************************************************************/
+.content {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/*****************************************************************************/
+/*
+/* Sidebar
+/*
+/*****************************************************************************/
+.sidebar {
+  background: #506BA5;
+  background: #2c3e50;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  box-shadow: inset 1em 0 3em -1em rgba(0,0,0,.6);
+  text-align: center;
+  color: #eee;
+}
+
+.sidebar a {
+  color: #f2f2f2;
+}
+
+/*****************************************************************************/
+/*
+/* Social Links
+/*
+/*****************************************************************************/
+.social-links {
+  width: 100%;
+  margin: 5% auto 0 auto;
+  padding: 0 0 0 10px;
+}
+
+.social-links li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.social-links a {
+  font-size: 32px;
+}
+
+.social-links a:hover {
+  color: #F7C769;
+  color: #6986E0;
+  color: #3498db;
+}
+
+
+/*****************************************************************************/
+/*
+/* About
+/*
+/*****************************************************************************/
+.about h2,
+.about h4 {
+  font-family: 'Jockey One', sans-serif;
+}
+
+.about h2 {
+  font-weight: 100;
+  font-size: 36px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.6);
+  margin: 5% auto 0 auto;
+  line-height: 40px;
+}
+
+.about h4 {
+  margin-top: 0;
+}
+
+.about h2:hover {
+  color: #3498db;
+}
+
+.about img {
+  border-radius: 75px;
+  margin-top: 10%;
+  width: 130px;
+}
+
+/*****************************************************************************/
+/*
 /* Navigation
 /*
 /*****************************************************************************/
@@ -67,91 +160,4 @@ a {
 
 .navigation a:hover {
   box-shadow: inset 0 .1em .1em .1em rgba(0,0,0,.4);
-}
-
-/*****************************************************************************/
-/*
-/* Content
-/*
-/*****************************************************************************/
-.content {
-  width: 80%;
-  margin: 30px auto;
-  padding: 20px;
-}
-
-/*****************************************************************************/
-/*
-/* Sidebar
-/*
-/*****************************************************************************/
-.sidebar {
-  background: #506BA5;
-  background: #2c3e50;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 25%;
-  height: 100%;
-  box-shadow: inset 1em 0 3em -1em rgba(0,0,0,.6);
-  text-align: center;
-  color: #eee;
-}
-
-.sidebar h2,
-.sidebar h4 {
-  font-family: 'Jockey One', sans-serif;
-}
-
-.sidebar h2 {
-  font-weight: 100;
-  font-size: 36px;
-  text-shadow: 0 1px 0 rgba(0,0,0,.6);
-  margin: 5% auto 0 auto;
-  line-height: 40px;
-}
-
-.sidebar h4 {
-  margin-top: 0;
-}
-
-.sidebar h2:hover {
-  color: #3498db;
-}
-
-.sidebar a {
-  color: #f2f2f2;
-}
-
-.sidebar img {
-  border-radius: 75px;
-  margin-top: 10%;
-  width: 130px;
-}
-
-/*****************************************************************************/
-/*
-/* Social Links
-/*
-/*****************************************************************************/
-.social-links {
-  width: 100%;
-  margin: 5% auto 0 auto;
-  padding: 0 0 0 10px;
-}
-
-.social-links li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 25px;
-}
-
-.social-links a {
-  font-size: 32px;
-}
-
-.social-links a:hover {
-  color: #F7C769;
-  color: #6986E0;
-  color: #3498db;
 }
