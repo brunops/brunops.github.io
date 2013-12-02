@@ -21,33 +21,42 @@ As soon as I started programming, I considered less code as better code. I sure 
 What are you talking about? Ok, let's see an example. Consider a C code to loop through a string and print its characters
 
 First our declarations, they won't change
-<pre class="brush: c; gutter: true; first-line: 1"> 
+{% highlight c %}
 #include &lt;stdio.h&gt;
 #include &lt;string.h&gt;
 
 int i, strSize;
 char *str = "my string";
 
-strSize = strlen(str);</pre>
+strSize = strlen(str);
+{% endhighlight %}
 First attempt
-<pre class="brush: c; gutter: true; first-line: 1">// Easy problem, give me two minutes..
+{% highlight c %}
+// Easy problem, give me two minutes..
 i = 0;
 while (i &lt; strSize) {
   printf("current letter: %c\n", str[i]);
   i++;
-}</pre>
+}
+{% endhighlight %}
 Okay, that's a great loop, congratz, but... Are you able to write your code in less lines?
-<pre class="brush: c; gutter: true; first-line: 1">// Pfff, that's easy, I was just playing, check out..
+{% highlight c %}
+// Pfff, that's easy, I was just playing, check out..
 for (i = 0; i &lt; strSize; ++i) {
   printf("current letter: %c\n", str[i]);
-}</pre>
+}
+{% endhighlight %}
 So you did a for loop, so cute, isn't it? Can you write less?
-<pre class="brush: c; gutter: true; first-line: 1">// Of course I can write less, can you read it?
+{% highlight c %}
+// Of course I can write less, can you read it?
 i = 0;
-while (i &lt; strSize &amp;&amp; printf("current letter: %c\n", str[i++]));</pre>
+while (i &lt; strSize &amp;&amp; printf("current letter: %c\n", str[i++]));
+{% endhighlight %}
 LESS!
-<pre class="brush: c; gutter: true; first-line: 1">// Eat that one lined while, you #%$"&amp;@%!
-while (*str &amp;&amp; printf("current letter: %c\n", *str++));</pre>
+{% highlight c %}
+// Eat that one lined while, you #%$"&amp;@%!
+while (*str &amp;&amp; printf("current letter: %c\n", *str++));
+{% endhighlight %}
 They'll all output the exact same result! My point is, lots of concepts are required to do this piece of unreadable code, like: more than one statement inside a loop condition, pointer arithmetic, operators precedence, and so on!
 
 There are many things you can learn, like:

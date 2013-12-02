@@ -17,7 +17,8 @@ Recently I had to perform some actions before opening and before closing a dialo
 Understanding the innards of JavaScript allows us to do some cool things. Not saying they're should be done, or that they are the right thing to do, just saying you can :)
 
 So.. prototypes...
-<pre class="brush: javascript; gutter: true; first-line: 1">function overrideDialogBehaviors() {
+{% highlight javascript %}
+function overrideDialogBehaviors() {
   var oldOpen = $.ui.dialog.prototype.open;
   $.ui.dialog.prototype.open = function() {
     console.log('Do whatever you want before opening a dialog');
@@ -29,7 +30,8 @@ So.. prototypes...
     console.log('Do whatever you want before closing a dialog');
     oldClose.call(this, event);
   }
-}</pre>
+}
+{% endhighlight %}
 Digging a bit into the jQueryUI source code, we can find the open and close dialog methods, they are responsible for showing and hiding the dialogs, respectively. Overriding their behavior, without losing any functionality is easy by simply setting them again, and calling the old method again, with all previous parameteres.
 
 In order to be able to perform the interception successfully, we can use the call() method, more information about it can be found in <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Function/call">Mozillas JavaScript Reference</a>.

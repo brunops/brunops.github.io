@@ -22,7 +22,8 @@ It's a tweaked version of the .bashrc found <a href="http://mediadoneright.com/c
 I added the cowsay with the a fortune as well, so every time I open a new terminal I get a nice quote. Awesome.
 
 [caption id="attachment_40" align="alignnone" width="300"]<a href="http://brunops.org/wp-content/uploads/2012/12/snapshot1.png"><img class="size-medium wp-image-40 " title=".bashrc file snapshot" alt=".bashrc result snapshot" src="http://brunops.org/wp-content/uploads/2012/12/snapshot1-300x156.png" width="300" height="156" /></a> How cool is the cow?[/caption]
-<pre class="brush: bash; gutter: true; first-line: 1">#### GIT &amp;&amp; PS1
+{% highlight bash %}
+#### GIT &amp;&amp; PS1
 #  SETUP CONSTANTS
 #  Bunch-o-predefined colors.  Makes reading code easier than escape sequences.
 
@@ -121,7 +122,8 @@ fi
 
 export PS1="\n$sq_color\342\224\214\342\224\200\$([[ \$? != 0 ]] &amp;&amp; echo \"[$BRed\342\234\227$sq_color]\342\224\200\")[$IBlack\t$sq_color]\342\224\200[\[\033[01;37m\]\u$sq_color]\342\224\200[$BGreen\w$sq_color]\n$sq_color\342\224\224\342\224\200\342\224\200&gt; $BRed\$("__git_ps1") $sq_color\$ $Color_Off"
 
-unset sq_color</pre>
+unset sq_color
+{% endhighlight %}
 In order to work properly, it requires git, fortune and cowsay installed.
 
 It's easy to notice that most of the colors definition are not used at all, but I like to keep all color definitions, so I'm able to change anything whenever I feel like.

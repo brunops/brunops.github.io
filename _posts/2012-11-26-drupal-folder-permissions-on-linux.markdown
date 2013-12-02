@@ -6,17 +6,12 @@ categories:
 - Drupal
 - Gist
 - Linux
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
 ---
 Every time after starting a new fresh install of Drupal in my Linux box I always have to set some permissions to the hierarchy structure to make it work properly.
 
 As I always need to hunt the commands over again, I've decided to put everything in one place so I can easily remember.
-<pre class="brush: bash; gutter: true; first-line: 1"># Include your user in www-data group
+{% highlight bash %}
+# Include your user in www-data group
 # This command needs to be run only once
 # If your user already exists you may instead need use
 # sudo usermod -a -G www-data brunops
@@ -30,5 +25,7 @@ sudo chown -R brunops:www-data /path/to/folder --preserve-root
 sudo find /path/to/folder -type f -print0 | xargs -0 sudo chmod 644 --preserve-root
 
 # Execution perm for folders
-sudo find /path/to/folder -type d -print0 | xargs -0 sudo chmod 755 --preserve-root</pre>
+sudo find /path/to/folder -type d -print0 | xargs -0 sudo chmod 755 --preserve-root
+{% endhighlight %}
+
 Latest version of the code can be checked in my <a class="vt-p" title="Latest version" href="https://gist.github.com/4148926" target="_blank">Gist</a>.

@@ -18,7 +18,8 @@ I've been poking around with some redirects that I needed to perform with Rewrit
 I basically had a couple scenarios that I wanted my regex to match (or not), and needed to keep testing it, as any minor change could compromise the whole test suite. "That's simple", I thought, "I'll create a super JavaScript code that will perform all my tests at once". It started pretty well, I had to figure out how Apache treats urls and deal with the RewriteConds, but not a major problem. And after that I was able to simulate its behavior and check the results on a &lt;irony&gt;nice, extremely awesome, super stylized HTML table&lt;/irony&gt;, really great, right?
 
 Basic HTML for the tests:
-<pre class="brush: html; gutter: true; first-line: 1">&lt;!doctype html&gt;
+{% highlight html %}
+&lt;!doctype html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;meta charset="utf-8"&gt;
@@ -62,9 +63,11 @@ Basic HTML for the tests:
 
     &lt;script src="testCasess.js"&gt;&lt;/script&gt;
   &lt;/body&gt;
-&lt;/html&gt;</pre>
+&lt;/html&gt;
+{% endhighlight %}
 JavaScript to Simulate Apache RewriteConds and Perform tests:
-<pre class="brush: javascript; gutter: true; first-line: 1">var testCases = [
+{% highlight javascript %}
+var testCases = [
   { text : "node",                             shouldMatch: true  },
   { text : "/node",                            shouldMatch: true  },
   { text : "/node/30",                         shouldMatch: true  },
@@ -171,7 +174,8 @@ JavaScript to Simulate Apache RewriteConds and Perform tests:
     return pass == elem.shouldMatch;
   }
 
-})(jQuery);</pre>
+})(jQuery);
+{% endhighlight %}
 [caption id="attachment_54" align="alignnone" width="289"]<a class="vt-p" href="http://brunops.org/javascript-and-lookbehinds/snapshot2/" rel="attachment wp-att-54"><img class="size-medium wp-image-54 " alt="First 18 results" src="http://brunops.org/wp-content/uploads/2012/12/snapshot2-289x300.png" width="289" height="300" /></a> First 18 tests and results[/caption]
 
 At first it was okay, and I managed to perform pretty much all of my tests using it. I know that I could (maybe should) have used a test library for it, like Jasmine, buy hey, it's cool to reinvent the wheel once in a while, just to get the feeling that you can.
