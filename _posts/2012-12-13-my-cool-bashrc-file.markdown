@@ -21,7 +21,10 @@ It's a tweaked version of the .bashrc found <a href="http://mediadoneright.com/c
 
 I added the cowsay with the a fortune as well, so every time I open a new terminal I get a nice quote. Awesome.
 
-[caption id="attachment_40" align="alignnone" width="300"]<a href="http://brunops.org/wp-content/uploads/2012/12/snapshot1.png"><img class="size-medium wp-image-40 " title=".bashrc file snapshot" alt=".bashrc result snapshot" src="http://brunops.org/wp-content/uploads/2012/12/snapshot1-300x156.png" width="300" height="156" /></a> How cool is the cow?[/caption]
+![.bashrc result snapshot](/assets/images/bash_snapshot.png)
+
+How cool is the cow?
+
 {% highlight bash %}
 #### GIT &amp;&amp; PS1
 #  SETUP CONSTANTS
