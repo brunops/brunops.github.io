@@ -6,12 +6,6 @@ categories:
 - Gist
 - git
 - Linux
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
 ---
 While working in Ubuntu, I feel my bash terminal as my home. Afterall, I spend a big part of my time there, so I need it to be nicely enjoyable.
 
