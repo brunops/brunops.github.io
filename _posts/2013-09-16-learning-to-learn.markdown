@@ -2,8 +2,6 @@
 layout: post
 title: Learning to learn
 date: '2013-09-16T01:16:01-07:00'
-tags: 
-tumblr_url: http://brunopsanches.tumblr.com/post/61384890202/learning-to-learn
 ---
 <p><strong>Don&#8217;t try to memorize concepts</strong><span>, you may succeed for a day, but you&#8217;ll fail in the long run. You&#8217;ll fail because you&#8217;re basically deluding yourself, you think you know something, but you don&#8217;t. Embrace it.</span></p>
 <p><span><strong>The keyboard is just a mean to express your thoughts</strong>. You have to focus on what you want to do and figuring out how to express it with your tools. Your tools are everything you use, programming language, text editor, browser, anything. Just try to keep the pseudocode in your head at all times, how to do the stuff is just syntax specifics, they don&#8217;t matter, the docs are there for it, detach, <a class="vt-p" href="http://en.wikipedia.org/wiki/Shuhari">Ha</a>.</span></p>

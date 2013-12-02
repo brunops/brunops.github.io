@@ -2,8 +2,6 @@
 layout: post
 title: Karma
 date: '2013-11-14T14:38:00-08:00'
-tags: 
-tumblr_url: http://brunopsanches.tumblr.com/post/66985228970/karma
 ---
 <p>Karma is a really useful tool to speed up TDDing JavaScript. It is a node.js extension and it is really easy to set up.</p>
 <p>Assuming you have npm installed, the steps are:</p>

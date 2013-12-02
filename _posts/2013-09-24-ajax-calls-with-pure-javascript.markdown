@@ -2,8 +2,6 @@
 layout: post
 title: Ajax calls with pure JavaScript
 date: '2013-09-24T22:30:53-07:00'
-tags: 
-tumblr_url: http://brunopsanches.tumblr.com/post/62209353156/ajax-calls-with-pure-javascript
 ---
 <p><span>You can get the correct object according to the browser with</span></p>
 <pre class="prettyprint"><code>function getXmlDoc() {

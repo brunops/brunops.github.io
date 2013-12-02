@@ -2,12 +2,6 @@
 layout: post
 title: Back to work!
 categories: []
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
 ---
 Just got back from my vacation, backpacking through Europe, schedule was: Helsinki, Stockholm, Copenhagen, Vienna, Budapest and Athens, great times! Unfortunately, due to some sickness, had to come back to Brazil 5 days earlier than expected. It was a great idea though, I'd probably be really bad now without medication, just missed Capadoccia, but I guess it will still be there for long after I'm gone, so, maybe next time :)
 

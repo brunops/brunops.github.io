@@ -4,12 +4,6 @@ title: Add new MySQL User
 categories:
 - Drupal
 - MySQL
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
 ---
 When working with Drupal the need to test some different configurations, testing or developing new modules occurs often times, and this is no argument to break the site for the rest of the team. So the need of create a sandbox appears.
 

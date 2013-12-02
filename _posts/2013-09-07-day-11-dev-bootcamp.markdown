@@ -2,8 +2,6 @@
 layout: post
 title: Day 11 - Dev Bootcamp
 date: '2013-09-07T18:18:02-07:00'
-tags: 
-tumblr_url: http://brunopsanches.tumblr.com/post/60582172680/day-11-dev-bootcamp
 ---
 <p>Leaders are different from bosses. Leaders inspire and motivate people to achieve an objective. A boss is not capable of creating an identity between the people and the goal. Forcing his subordinates to exhale their motivation to conclude his own objectives. Leaders act in a way that there are no &#8220;subordinates&#8221;.</p>
 <p>Bosses love to give their opinions about technical issues, usually unsubstantiated, simply opinions. Everybody has opinions (at least they should), people need something useful, bring data, what you &#8220;think&#8221; is usually a waste of time. The worst part is that it looks like a snowball, each boss works to fill their bosses spreadsheet with green items. Cascading through the hierarch until it hits someone who really knows how to do the job.</p>

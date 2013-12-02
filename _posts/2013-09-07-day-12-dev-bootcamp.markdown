@@ -2,8 +2,6 @@
 layout: post
 title: Day 12 - Dev Bootcamp
 date: '2013-09-07T19:59:19-07:00'
-tags:
-tumblr_url: http://brunopsanches.tumblr.com/post/60590434868/day-12-dev-bootcamp
 ---
 
 Yes, I'm having a hard time keeping this blog up to date. I'm using the weekends to write the missing entries. Sometimes the day ends and I'm just too tired, so I leave it to the next day. Otherwise I end up writing superficial and completely not useful stuff just to fill the gaps and sleep. But fear not! I'm taking notes during the day, everyday, of what happened, this way I can remember what happened. And add something interesting to it as well.

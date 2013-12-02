@@ -2,8 +2,6 @@
 layout: post
 title: Execute code in new Terminal window
 date: '2013-09-21T20:59:00-07:00'
-tags: 
-tumblr_url: http://brunopsanches.tumblr.com/post/61903844589/execute-code-in-new-terminal-window
 ---
 <p>Open a new Terminal window, from the Terminal (mac os), give focus to it and run some arbitrary code:</p>
 <pre class="prettyprint"><code>

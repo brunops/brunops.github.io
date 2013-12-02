@@ -2,8 +2,6 @@
 layout: post
 title: Rails Impressions
 date: '2013-10-15T01:59:00-07:00'
-tags: 
-tumblr_url: http://brunopsanches.tumblr.com/post/64095838925/rails-impressions
 ---
 <p>I started writing this a week ago.. so try to abstract when time is mentioned..</p>
 

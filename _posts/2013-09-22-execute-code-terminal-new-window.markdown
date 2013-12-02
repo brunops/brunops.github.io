@@ -5,12 +5,6 @@ categories:
 - bash
 - CLI
 - random
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
 ---
 Open a new Terminal window, from the Terminal (mac os), give focus to it and run some arbitrary code:
 <pre class="brush: bash; gutter: true; first-line: 1">osascript -e 'tell application "Terminal"

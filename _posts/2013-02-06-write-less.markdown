@@ -4,13 +4,6 @@ title: Are you able to write your code in less lines?
 categories:
 - C
 - Software Craftsmanship
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
-  _wp_old_slug: are-you-able-to-write-your-code-in-less-lines
 ---
 <blockquote>Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
 Antoine de Saint-Exupéry</blockquote>

@@ -2,8 +2,6 @@
 layout: post
 title: Day 7 - Dev Bootcamp
 date: '2013-09-03T01:06:04-07:00'
-tags: 
-tumblr_url: http://brunopsanches.tumblr.com/post/60153561983/day-7-dev-bootcamp
 ---
 <p>Sunday. Day to sleep a bit more and be able to do important things that you simply forget during the week. Like buying food and a new blanket. Things that if you think for a while, are actually more important than implementing a binary search, isn&#8217;t it?</p>
 <p>After that, go to DBC and try to finish as much challenges as you can!</p>

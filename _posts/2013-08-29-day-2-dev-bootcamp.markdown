@@ -2,8 +2,6 @@
 layout: post
 title: Day 2 - Dev Bootcamp
 date: '2013-08-29T03:00:59-07:00'
-tags: 
-tumblr_url: http://brunopsanches.tumblr.com/post/59662065142/day-2-dev-bootcamp
 ---
 <p>This morning there was a really interesting presentation on how to give and receive feedbacks properly, it was much better than what I was expecting. To give a good feedback, it should include the following properties: Actionable, Specific and Kind (which gives the nice acronym ASK). Giving feedback is one point that I really have to improve myself. The really awesome thing is how it&#8217;s possible to notice the patterns discussed in the class on the behavior of the people at DBC, and in my opinion that&#8217;s one of the best ways to learn, by example.</p>
 <p>Right after the presentation, the pairing session started again, with lots of new challenges. There was a refactor and regular expressions talk in between, as the challenges required it. Most of the time was spent with refactoring and in my opinion the regexes are kind of a big topic in itself, so it was a really quick introduction and quite superficial, just saying &#8220;hey, regexes exist and there are awesome, go out there and use it&#8221;. Nothing really new for me, but I believe it was necessary to cover it. It is still nice to observe the way the teachers talk to each other to explain the topics to the class though.</p>

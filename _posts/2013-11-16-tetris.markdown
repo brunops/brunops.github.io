@@ -2,8 +2,6 @@
 layout: post
 title: Tetris
 date: '2013-11-16T23:13:00-08:00'
-tags: 
-tumblr_url: http://brunopsanches.tumblr.com/post/67222056705/tetris
 ---
 <p>I chose Tetris as my somewhat bigger project to practice TDD.</p>
 <p>It all started when one friend told me about some company that would ask the aplicants to develop Tetris as the interview process. At first I was &#8220;wow! that&#8217;s crazy!&#8221;, five seconds later I was like &#8220;yeah, the board would be a matrix and all the other pieces can be represented as matrices as well, hmm..&#8221;. That stuck in my head, and now that DBC is over I actually had time to start it.</p>

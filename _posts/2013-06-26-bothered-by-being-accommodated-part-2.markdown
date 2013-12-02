@@ -6,12 +6,6 @@ categories:
 - myself
 - random
 - Ruby on Rails
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
 ---
 I had enough of not doing what really inspires me, coming back home without the will to study more about my work. To work with exactly what you like and keep studying it more without urgent necessity, only because it's fun. I had that before, and I want it again.
 

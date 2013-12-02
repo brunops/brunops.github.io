@@ -5,12 +5,6 @@ categories:
 - Code Review
 - random
 - Software Craftsmanship
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
 ---
 I consider legibility to be one of the main goals of a code. Maybe your boss won't agree with me at a first glance but, believe me, he should. Hours and hours of development are spent recklessly only to understand what another simple minded, careless programmer did. And sometimes it's worse, because this programmer was you a couple of days ago.
 

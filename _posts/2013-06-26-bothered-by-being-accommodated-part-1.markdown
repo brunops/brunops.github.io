@@ -5,12 +5,6 @@ categories:
 - life
 - myself
 - random
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
 ---
 Enough! That is enough! I got tired of doing the same things over again, and have finally gathered all the courage to make something about it. And this time it is for real. One of the hardest decisions ever.
 

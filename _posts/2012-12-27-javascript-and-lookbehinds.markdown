@@ -6,12 +6,6 @@ categories:
 - jQuery
 - regex
 - Tests
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
 ---
 I've been poking around with some redirects that I needed to perform with RewriteRules in Apache configuration. This story deserves its own post, and I hope to post it soon. So, long story short, I had to deal with some complex regular expressions (regexes). The regex started simple, but soon grew bigger when covering other scenarios and trying to keep it in only one expression.
 

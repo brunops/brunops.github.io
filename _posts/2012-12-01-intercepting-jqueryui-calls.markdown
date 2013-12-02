@@ -5,12 +5,6 @@ categories:
 - JavaScript
 - jQuery
 - jQueryUI
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
 ---
 Recently I had to perform some actions before opening and before closing a dialog in a website. I had multiple dialogs throughout the website, the thing in common among them, was that all dialogs used the awesome jQueryUI dialog plugin, so I could take advantage of that..
 

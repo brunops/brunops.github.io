@@ -2,8 +2,6 @@
 layout: post
 title: Day 6 - Dev Bootcamp
 date: '2013-09-01T21:56:32-07:00'
-tags: 
-tumblr_url: http://brunopsanches.tumblr.com/post/60033366021/day-6-dev-bootcamp
 ---
 <p>Saturday. Here at DBC, is like a less crowded week day, just a bit. Even though I stayed until midnight everyday, unsolved problems kept accumulating throughout the week. And guess what, there are weekend exercises as well.</p>
 <p>There&#8217;s an overwhelming number of challenges to solve, and it looks like as soon as you forget about your (stupid) pride, and simply understand what we&#8217;re really here for, the faster you&#8217;re going to focus on your self development.</p>

@@ -2,8 +2,6 @@
 layout: post
 title: Day 4 - Dev Bootcamp
 date: '2013-09-01T20:54:57-07:00'
-tags: 
-tumblr_url: http://brunopsanches.tumblr.com/post/60028226799/day-4-dev-bootcamp
 ---
 <p>Today was the first Yoga class! First time ever. It went better than expected, although I had some troubles understanding all of the body parts the teacher was saying and my lack of prepare, I actually liked it. It felt relaxing. Maybe I&#8217;ll continue to go when it stops being mandatory.</p>
 <p>The coolest thing was pairing with one of the teachers on a really random challenge, doing even some ASCII art and using vim. It&#8217;s cooler seeing than telling, so:</p>

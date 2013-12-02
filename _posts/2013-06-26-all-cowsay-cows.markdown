@@ -6,12 +6,6 @@ categories:
 - CLI
 - Linux
 - shell
-tags: []
-status: draft
-type: post
-published: false
-meta:
-  _edit_last: '1'
 ---
 I was having fun with the cowsay (yeah, for me this is fun) combined with fortune to give a nice touch to <a class="vt-p" title="See the resulting .bashrc" href="http://brunops.org/my-cool-bashrc-file/" target="_blank">my bash</a>. Suddenly I discovered that there are many available cows :O ("cowsay -l") , so I started seeing them all. It was kind of repetitive job to print each one of then (20 in total), so I combined cowsay with awk to write a command to print 'em all, yay.
 {% highlight bash %}

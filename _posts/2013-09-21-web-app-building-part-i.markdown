@@ -2,8 +2,6 @@
 layout: post
 title: ! 'Web app building, part I. '
 date: '2013-09-21T23:59:33-07:00'
-tags:
-tumblr_url: http://brunopsanches.tumblr.com/post/61918592818/web-app-building-part-i
 ---
 <a href="http://letmestackoverflowthatforyou.herokuapp.com/">Web app building, part I. </a>
 <a class="tumblr_blog vt-p" href="http://hacking-your-megabits.tumblr.com/post/61907873197/web-app-building-part-i">hacking-your-megabits</a>

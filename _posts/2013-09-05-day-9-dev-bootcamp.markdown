@@ -2,8 +2,6 @@
 layout: post
 title: Day 9 - Dev Bootcamp
 date: '2013-09-05T02:33:40-07:00'
-tags: 
-tumblr_url: http://brunopsanches.tumblr.com/post/60341942418/day-9-dev-bootcamp
 ---
 <p>Tuesday. Superego presentation on the morning. Not that I agree with everything, but the idea of the Id, the Ego and the Superego is really interesting. After a group dynamic, what was really surprising, is that everybody seems to share lots of common confusion and doubts. It helps us to develop more empathy with each other. The main goal is to achieve awareness and learn how to deal with the little voice inside your head.</p>
 <p>By the afternoon, while pairing, we decided to define the driver code before actually creating our classes. Which was really interesting. It prevents complexity to be added. Classes were designed to do only what they&#8217;re supposed to. The focus was entirely on the behavior, on how the objects should talk to each other. It&#8217;s pretty much like TDD. Really enjoyed it.</p>

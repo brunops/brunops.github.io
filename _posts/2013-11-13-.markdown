@@ -2,7 +2,5 @@
 layout: post
 title: ''
 date: '2013-11-13T14:13:43-08:00'
-tags: 
-tumblr_url: http://brunopsanches.tumblr.com/post/66890728756
 ---
 <a href=""></a>

@@ -2,8 +2,6 @@
 layout: post
 title: Test Driven Development (TDD)
 date: '2013-10-16T22:20:22-07:00'
-tags:
-tumblr_url: http://brunopsanches.tumblr.com/post/64262963573/test-driven-development-tdd
 ---
 
 I never thought I was going to say it, but it&#8217;s true, <strong>tests are beautiful</strong>. Last group projects went differently.
