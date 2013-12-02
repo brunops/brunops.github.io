@@ -13,13 +13,13 @@ I basically had a couple scenarios that I wanted my regex to match (or not), and
 
 Basic HTML for the tests:
 {% highlight html %}
-&lt;!doctype html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;Test Cases&lt;/title&gt;
-    &lt;script src="http://bit.ly/jqsource"&gt;&lt;/script&gt;
-    &lt;style type="text/css"&gt;
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Cases</title>
+    <script src="http://bit.ly/jqsource"></script>
+    <style type="text/css">
       tr.pass {
         background: #72DA72;
       }
@@ -42,22 +42,22 @@ Basic HTML for the tests:
       td {
         padding: 5px;
       }
-    &lt;/style&gt;
-  &lt;/head&gt;
+    </style>
+  </head>
 
-  &lt;body&gt;
-    &lt;table id="tests"&gt;
-      &lt;tr&gt;
-        &lt;td&gt;#&lt;/td&gt;
-        &lt;td&gt;Test Case&lt;/td&gt;
-        &lt;td&gt;Should match?&lt;/td&gt;
-        &lt;td&gt;Status&lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/table&gt;
+  <body>
+    <table id="tests">
+      <tr>
+        <td>#</td>
+        <td>Test Case</td>
+        <td>Should match?</td>
+        <td>Status</td>
+      </tr>
+    </table>
 
-    &lt;script src="testCasess.js"&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+    <script src="testCasess.js"></script>
+  </body>
+</html>
 {% endhighlight %}
 JavaScript to Simulate Apache RewriteConds and Perform tests:
 {% highlight javascript %}
@@ -71,7 +71,7 @@ var testCases = [
   { text : "el-GR/nODe",                       shouldMatch: true  },
   { text : "/test?q=node",                     shouldMatch: true  },
   { text : "/test?paramq=node",                shouldMatch: false },
-  { text : "/test?p1=1&amp;p2=2&amp;p3=c&amp;q=node&amp;p5=6", shouldMatch: true  },
+  { text : "/test?p1=1&p2=2&p3=c&q=node&p5=6", shouldMatch: true  },
   { text : "/test?q=node/add",                 shouldMatch: true  },
   { text : "/taxonomy",                        shouldMatch: false },
   { text : "/taxonomy/term",                   shouldMatch: true  },
@@ -170,7 +170,9 @@ var testCases = [
 
 })(jQuery);
 {% endhighlight %}
-[caption id="attachment_54" align="alignnone" width="289"]<a class="vt-p" href="http://brunops.org/javascript-and-lookbehinds/snapshot2/" rel="attachment wp-att-54"><img class="size-medium wp-image-54 " alt="First 18 results" src="http://brunops.org/wp-content/uploads/2012/12/snapshot2-289x300.png" width="289" height="300" /></a> First 18 tests and results[/caption]
+![First 18 tests and results](/assets/images/tests_snapshot.png)
+
+First 18 tests and results
 
 At first it was okay, and I managed to perform pretty much all of my tests using it. I know that I could (maybe should) have used a test library for it, like Jasmine, buy hey, it's cool to reinvent the wheel once in a while, just to get the feeling that you can.
 
@@ -178,14 +180,14 @@ This kind of tests don't garantee that everything will work once rewriten to Apa
 
 Then, I continued to perform all my tests, trying out different odd combinations of possibilities. So, I was in the exercise of breaking my code, fixing the regex, breaking the code again, fixing the regex once more, and so on and so forth... Suddenly, I needed to use a lookbehind constructor in my regular expression to cover my tests. This is the point when things start to get weird.
 
-I had my regex set up an ready to roll, I had the great <a class="vt-p" href="http://www.regular-expressions.info/">Regular-Expressions.info</a> opened, things looked right, expressions should work, but they simply didn't. I was trying to figure out why a simple expression as <strong>/(?&lt;=a)b/ig.test("ab")</strong> didn't match. Didn't even have a correct syntax!
+I had my regex set up an ready to roll, I had the great <a target="_blank" href="http://www.regular-expressions.info/">Regular-Expressions.info</a> opened, things looked right, expressions should work, but they simply didn't. I was trying to figure out why a simple expression as <strong>/(?&lt;=a)b/ig.test("ab")</strong> didn't match. Didn't even have a correct syntax!
 
-Then, it hit me. In a glimpse of lucidity, I remembered that once upon a time, when studying a bit of regular expressions, I may have read that some regex flavors do not support everything. So googling a bit, I've ended up in the <a class="vt-p" href="http://www.regular-expressions.info/lookaround.html">Lookarounds Section</a>. As we can see, our dear friend JavaScript does not support lookbehinds. No one is perfect.
+Then, it hit me. In a glimpse of lucidity, I remembered that once upon a time, when studying a bit of regular expressions, I may have read that some regex flavors do not support everything. So googling a bit, I've ended up in the <a target="_blank" href="http://www.regular-expressions.info/lookaround.html">Lookarounds Section</a>. As we can see, our dear friend JavaScript does not support lookbehinds. No one is perfect.
 
 I didn't want to discard all my cool test suite that I've coded with such care. So I start searching for workarounds on how to simulate lookbehinds in JavaScript. I have found some solutions over the web, but nothing really worked well for me. And then, I realized that simulating over a simulation, is not what I call trustworthy.
 
 Time for a different approach. I would have to discard all my code, but that happens. The approach should be something that we really can put some confidence on. I couldn't find anything really helpfull at first, so I got a bit demotivated..
 
-I forgot it for a while and started browsing random stuff, when I decided to check out the <a class="vt-p" href="http://yeoman.io/">Yeoman</a> project. Reading a bit, I've found about PhantomJS, and then, CasperJS. And here is where the story start getting interesting.
+I forgot it for a while and started browsing random stuff, when I decided to check out the <a target="_blank" href="http://yeoman.io/">Yeoman</a> project. Reading a bit, I've found about PhantomJS, and then, CasperJS. And here is where the story start getting interesting.
 
 And that's the next subject. Automated unit testing using CasperJS. Hopefully, with less story, and more coding.
