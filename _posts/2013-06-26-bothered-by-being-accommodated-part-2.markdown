@@ -24,7 +24,7 @@ So in the beginning of 2013 I started to write down everything I wanted to do 
 
 The common thing between them, which is the most important, is that all of them involves learning. I didn't think that everything would be successful, so here's what I did. I applied to a post-graduation subject as a special student (so I could still work), told my manager that I wanted to work with something different (should've done it before), and applied to an intensive Ruby on Rails course at San Francisco.
 
-Then everything went better than expected. I was accepted on the Neural Networks subject, got the chance to change technologies at my company (many thanks to my manager, who helped me so much) and started to work with Java, and I was accepted at <a class="vt-p" title="Dev Bootcamp - Learn Ruby on Rails in 9 weeks" href="http://devbootcamp.com/" target="_blank">DevBootcamp</a>.
+Then everything went better than expected. I was accepted on the Neural Networks subject, got the chance to change technologies at my company (many thanks to my manager, who helped me so much) and started to work with Java, and I was accepted at <a title="Dev Bootcamp - Learn Ruby on Rails in 9 weeks" href="http://devbootcamp.com/" target="_blank">DevBootcamp</a>.
 
 Long story short. I couldn't handle it all at once, tried really hard, but Neural Networks while still working turned out not being the brightest idea. Got passionate about the subject and intend to study it on the future, but for now it served as learning that I can't do everything at the same time. Kinda frustrating, nevertheless, a good experience.
 
