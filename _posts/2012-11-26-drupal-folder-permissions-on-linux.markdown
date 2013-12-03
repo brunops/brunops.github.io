@@ -28,4 +28,4 @@ sudo find /path/to/folder -type f -print0 | xargs -0 sudo chmod 644 --preserve-r
 sudo find /path/to/folder -type d -print0 | xargs -0 sudo chmod 755 --preserve-root
 {% endhighlight %}
 
-Latest version of the code can be checked in my <a class="vt-p" title="Latest version" href="https://gist.github.com/4148926" target="_blank">Gist</a>.
+Latest version of the code can be checked in my <a title="Latest version" href="https://gist.github.com/4148926" target="_blank">Gist</a>.
