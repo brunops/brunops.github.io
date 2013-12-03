@@ -3,8 +3,10 @@ layout: post
 title: Ajax calls with pure JavaScript
 date: '2013-09-24T22:30:53-07:00'
 ---
-<p><span>You can get the correct object according to the browser with</span></p>
-<pre class="prettyprint"><code>function getXmlDoc() {
+<span>You can get the correct object according to the browser with:</span>
+
+{% highlight javascript %}
+function getXmlDoc() {
   var xmlDoc;
 
   if (window.XMLHttpRequest) {
@@ -18,25 +20,28 @@ date: '2013-09-24T22:30:53-07:00'
 
   return xmlDoc;
 }
-</code></pre>
-<p><span>With the correct object, a GET might can be abstracted to:</span></p>
-<pre class="prettyprint"><code>
+{% endhighlight %}
+
+<span>With the correct object, a GET might can be abstracted to:</span>
+{% highlight javascript %}
 function myGet(url, callback) {
   var xmlDoc = getXmlDoc();
 
   xmlDoc.open('GET', url, true);
 
   xmlDoc.onreadystatechange = function() {
-    if (xmlDoc.readyState === 4 &amp;&amp; xmlDoc.status === 200) {
+    if (xmlDoc.readyState === 4 && xmlDoc.status === 200) {
       callback(xmlDoc);
     }
   }
 
   xmlDoc.send();
 }
-</code></pre>
-<p>and a POST to:</p>
-<pre class="prettyprint"><code>
+{% endhighlight %}
+
+<span>and a POST to:</span>
+{% highlight javascript %}
+
 function myPost(url, data, callback) {
   var xmlDoc = getXmlDoc();
 
@@ -44,11 +49,11 @@ function myPost(url, data, callback) {
   xmlDoc.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
   xmlDoc.onreadystatechange = function() {
-    if (xmlDoc.readyState === 4 &amp;&amp; xmlDoc.status === 200) {
+    if (xmlDoc.readyState === 4 && xmlDoc.status === 200) {
       callback(xmlDoc);
     }
   }
 
   xmlDoc.send(data);
 }
-</code></pre>
+{% endhighlight %}
