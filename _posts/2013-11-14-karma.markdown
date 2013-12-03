@@ -2,19 +2,32 @@
 layout: post
 title: Karma
 date: '2013-11-14T14:38:00-08:00'
+categories:
+- TDD
+- karma
+- CLI
 ---
-<p>Karma is a really useful tool to speed up TDDing JavaScript. It is a node.js extension and it is really easy to set up.</p>
-<p>Assuming you have npm installed, the steps are:</p>
-<p><strong>1.</strong> Install Karma</p>
-<p><code>npm install -g karma</code></p>
-<p><strong>2.</strong> Go to your project folder and init Karma</p>
-<p><code>cd ~/my_l33t_project</code></p>
-<p><code>karma init</code></p>
-<p><strong>3.</strong> Follow the instructions, choose your test suite, like Jasmine, and that will create a karma.conf.js file with its configurations.</p>
-<p><strong>4.</strong> If everything goes well, you&#8217;ll be able to start it with:</p>
-<p><code>karma start</code></p>
-<p>Detailed information can be found on <a class="vt-p" href="https://github.com/karma-runner/karma">Karma github page</a> or the <a class="vt-p" href="http://karma-runner.github.io/">official page</a>.</p>
-<p>When starting, it will trigger a chrome window where the tests will be run on the background, the only thing you have to see is the console. Personally I use sizeUp to change the size of the windows so it&#8217;s possible to see the editor and the terminal at the same time. This way, there&#8217;s no need to keep switching between windows and refreshing the browser all the time.</p>
-<p><img alt="image" src="http://media.tumblr.com/cec1e47233f4773dde416338352af11c/tumblr_inline_mw9qf9nYyl1s3h6bp.png"/></p>
+Karma is a really useful tool to speed up TDDing JavaScript. It is a node.js extension and it is really easy to set up.
 
-<p>Karma will watch your files for modifications and run the tests on every file save, and because it&#8217;s not running the whole browser, it&#8217;ll take a ridiculously small amount of time to run all the tests. Instant feedback on every <code>Cmd + S</code>. Awesome.</p>
+Assuming you have npm installed, the steps are:
+
+{% highlight bash %}
+# Install Karma
+$ npm install -g karma
+
+# Go to your project folder and init Karma
+$ cd ~/my_l33t_project
+$ karma init
+
+# Follow the instructions, choose your test suite, like Jasmine, and that will create a karma.conf.js file with its configurations.
+# If everything goes well, you'll be able to start it with:
+$ karma start
+{% endhighlight %}
+
+Detailed information can be found on <a target="_blank" href="https://github.com/karma-runner/karma">Karma github page</a> or the <a target="_blank" href="http://karma-runner.github.io/">official page</a>.
+
+When starting, it will trigger a chrome window where the tests will be run on the background, the only thing you have to see is the console. Personally I use sizeUp to change the size of the windows so it's possible to see the editor and the terminal at the same time. This way, there's no need to keep switching between windows and refreshing the browser all the time.
+
+![Karma](/assets/images/karma.png)
+
+Karma will watch your files for modifications and run the tests on every file save, and because it's not running the whole browser, it'll take a ridiculously small amount of time to run all the tests. Instant feedback on every <code>Cmd + S</code>. Awesome.
