@@ -117,18 +117,18 @@ var testCases = [
           statusMsg = status ? getPassMsg() : getFailedMsg();
 
       $('#tests').append(
-        $('&lt;tr&gt;&lt;/tr&gt;').addClass((status ? 'pass' : 'failed')).append(
-          '&lt;td&gt;' + i + '&lt;/td&gt;&lt;td&gt;' + test.text + '&lt;/td&gt;&lt;td&gt;' + test.shouldMatch + '&lt;/td&gt;&lt;td&gt;' + statusMsg + '&lt;/td&gt;'
+        $('<tr></tr>').addClass((status ? 'pass' : 'failed')).append(
+          '<td>' + i + '</td><td>' + test.text + '</td><td>' + test.shouldMatch + '</td><td>' + statusMsg + '</td>'
         )
       );
     });
   }
 
   function getPassMsg() {
-    return '&lt;span class="pass"&gt;PASS&lt;/span&gt;';
+    return '<span class="pass">PASS</span>';
   }
   function getFailedMsg() {
-    return '&lt;span class="failed"&gt;FAIL&lt;/span&gt;';
+    return '<span class="failed">FAIL</span>';
   }
 
   function assertText(elem) {
@@ -180,7 +180,7 @@ This kind of tests don't garantee that everything will work once rewriten to Apa
 
 Then, I continued to perform all my tests, trying out different odd combinations of possibilities. So, I was in the exercise of breaking my code, fixing the regex, breaking the code again, fixing the regex once more, and so on and so forth... Suddenly, I needed to use a lookbehind constructor in my regular expression to cover my tests. This is the point when things start to get weird.
 
-I had my regex set up an ready to roll, I had the great <a target="_blank" href="http://www.regular-expressions.info/">Regular-Expressions.info</a> opened, things looked right, expressions should work, but they simply didn't. I was trying to figure out why a simple expression as <strong>/(?&lt;=a)b/ig.test("ab")</strong> didn't match. Didn't even have a correct syntax!
+I had my regex set up an ready to roll, I had the great <a target="_blank" href="http://www.regular-expressions.info/">Regular-Expressions.info</a> opened, things looked right, expressions should work, but they simply didn't. I was trying to figure out why a simple expression as <strong>/(?<=a)b/ig.test("ab")</strong> didn't match. Didn't even have a correct syntax!
 
 Then, it hit me. In a glimpse of lucidity, I remembered that once upon a time, when studying a bit of regular expressions, I may have read that some regex flavors do not support everything. So googling a bit, I've ended up in the <a target="_blank" href="http://www.regular-expressions.info/lookaround.html">Lookarounds Section</a>. As we can see, our dear friend JavaScript does not support lookbehinds. No one is perfect.
 
