@@ -13,4 +13,13 @@ title: Bruno Sanches
       </li>
     {% endfor %}
   </ul>
+  <div class="pager">
+    {% if paginator.page > 1 %}
+      <a href="{{ paginator.previous_page_path }}" class="back">Back</a>
+    {% endif %}
+
+    {% if paginator.page < paginator.total_pages %}
+      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% endif %}
+  </div>
 </div>
