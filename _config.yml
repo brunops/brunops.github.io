@@ -2,3 +2,5 @@ name: brunops.org
 markdown: redcarpet
 pygments: true
 permalink: /:title
+paginate: 5
+paginate_path: /page-:num
