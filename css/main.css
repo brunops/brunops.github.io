@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #13357E;
+  color: #114C86;
   text-decoration: none;
 }
 
@@ -188,7 +188,7 @@ a:hover {
   padding: 7px;
   font-weight: 200;
   height: 100%;
-  background: #08c;
+  background: #114C86;
   box-shadow: 0 .1em .3em .1em rgba(0,0,0,.2);
 }
 
