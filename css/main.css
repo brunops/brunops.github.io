@@ -34,6 +34,10 @@ a:hover {
 .content {
   width: 80%;
   margin: 50px auto;
+  padding: 0;
+  background: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 .2em .5em 0em rgba(0,0,0,.4);
 }
 
 /*****************************************************************************/
@@ -42,10 +46,8 @@ a:hover {
 /*
 /*****************************************************************************/
 .posts {
-  padding: 10px 0;
-  background: #f2f2f2;
-  border-radius: 5px;
-  box-shadow: 0 .2em .5em 0em rgba(0,0,0,.4);
+  list-style: none;
+  padding: 0;
 }
 
 .post {

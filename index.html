@@ -3,9 +3,9 @@ layout: default
 title: Bruno Sanches
 ---
 
-<div class="posts">
+<ul class="posts">
   {% for post in paginator.posts %}
-    <article class="post">
+    <li class="post">
       <header class="post-header">
         <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <span class="date">{{ post.date | date_to_string }}</span>
@@ -14,9 +14,9 @@ title: Bruno Sanches
         <p>{{ post.excerpt }}</p>
         <a class="read-full-post-link" href="{{ post.url }}">&raquo; Read full post</a>
       </div>
-    </article>
+    </li>
   {% endfor %}
-</div>
+</ul>
 
 <div class="pager">
   {% if paginator.page > 1 %}
