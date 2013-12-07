@@ -17,6 +17,9 @@ a:hover {
   color: #3498db;
 }
 
+a {
+  outline: none !important;
+}
 /*****************************************************************************/
 /*
 /* Container
@@ -34,7 +37,6 @@ a:hover {
 .content {
   width: 75%;
   margin: 50px auto;
-  /*padding: 0 30px 30px 30px;*/
   background: #f2f2f2;
   border-radius: 5px;
   box-shadow: 0 .2em .5em 0em rgba(0,0,0,.4);
@@ -99,59 +101,26 @@ a:hover {
   position: relative;
 }
 
+.full-post .post {
+  margin: 0;
+}
+
 .post-title {
   margin: 0;
 }
 
 .post-header {
-  /*background: #114C86;*/
-  /*padding: 8px 10px;*/
   position: relative;
   font-size: 14px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
-  /*width: 100%;*/
-  /*left: -10px;*/
-  /*box-shadow: 0 1px 5px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.3);*/
-}
-
-/*.post-header:before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #000 #000 transparent transparent;
-  position: absolute;
-  bottom: -10px;
-  left: 0px;
-}*/
-
-/*.post-header:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #000 transparent transparent #000;
-  position: absolute;
-  bottom: -10px;
-  right: 0px;
-}*/
-
-.post-header a,
-.post-header .date {
-  /*margin-left: 15px;*/
-  /*color: #333;*/
 }
 
 .post-header a:hover {
   color: #3498db;
-  /*text-shadow: 0 1px 0 rgba(0,0,0,.6);*/
 }
 
 .date {
-  font-size: 90%;
   font-style: italic;
   color: #888;
 }
@@ -159,13 +128,14 @@ a:hover {
 .post-content {
   text-align: justify;
   position: relative;
-  /*padding: 10px;*/
+  padding: 5px;
 }
 
 .read-full-post-link {
   font-size: 14px;
   position: absolute;
-  right: 0px;
+  bottom: -40px;
+  right: 10px;
 }
 
 /*****************************************************************************/
@@ -213,7 +183,6 @@ a:hover {
 .social-links a:hover {
   color: #3498db;
 }
-
 
 /*****************************************************************************/
 /*

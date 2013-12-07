@@ -2,7 +2,6 @@
 layout: default
 title: About
 ---
-#About
 My name is Bruno Sanches, I'm from Brazil. I am the kind of guy that learned C programming by himself while still in high school and that finds algorithms and computer science history interesting.
 
 Graduated in Information Technology at [UNICAMP](http://www.unicamp.br) in 2010. Worked as a Software Engineer for 3 and a half years at CI&T doing Drupal, PHP, JavaScript, MySQL and Java. Left my job and came to San Francisco and graduated from [Dev Bootcamp](http://devbootcamp.com) in October 2013.
