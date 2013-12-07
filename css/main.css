@@ -32,12 +32,56 @@ a:hover {
 /*
 /*****************************************************************************/
 .content {
-  width: 80%;
+  width: 75%;
   margin: 50px auto;
-  padding: 0;
+  /*padding: 0 30px 30px 30px;*/
   background: #f2f2f2;
   border-radius: 5px;
   box-shadow: 0 .2em .5em 0em rgba(0,0,0,.4);
+}
+
+.inner-content {
+  padding: 20px;
+}
+
+.page-title {
+  background: #114C86;
+  padding: 8px 10px;
+  position: relative;
+  color: #f2f2f2;
+  font-size: 14px;
+  width: 100%;
+  left: -10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.3);
+}
+
+.page-title:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 #000 transparent transparent;
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+}
+
+.page-title:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent #000;
+  position: absolute;
+  bottom: -10px;
+  right: 0px;
+}
+
+.page-title h1 {
+  margin: 10px 0;
+  margin-left: 20px;
 }
 
 /*****************************************************************************/
@@ -51,7 +95,7 @@ a:hover {
 }
 
 .post {
-  margin: 20px 0;
+  margin-bottom: 60px;
   position: relative;
 }
 
@@ -60,16 +104,18 @@ a:hover {
 }
 
 .post-header {
-  background: #114C86;
-  padding: 8px 10px;
+  /*background: #114C86;*/
+  /*padding: 8px 10px;*/
   position: relative;
   font-size: 14px;
-  width: 100%;
-  left: -10px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.3);
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  /*width: 100%;*/
+  /*left: -10px;*/
+  /*box-shadow: 0 1px 5px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.3);*/
 }
 
-.post-header:before {
+/*.post-header:before {
   content: "";
   width: 0;
   height: 0;
@@ -79,9 +125,9 @@ a:hover {
   position: absolute;
   bottom: -10px;
   left: 0px;
-}
+}*/
 
-.post-header:after {
+/*.post-header:after {
   content: "";
   width: 0;
   height: 0;
@@ -91,34 +137,35 @@ a:hover {
   position: absolute;
   bottom: -10px;
   right: 0px;
-}
+}*/
 
 .post-header a,
 .post-header .date {
-  margin-left: 15px;
-  color: #f2f2f2;
+  /*margin-left: 15px;*/
+  /*color: #333;*/
 }
 
 .post-header a:hover {
   color: #3498db;
-  text-shadow: 0 1px 0 rgba(0,0,0,.6);
+  /*text-shadow: 0 1px 0 rgba(0,0,0,.6);*/
 }
 
 .date {
-  font-size: 80%;
+  font-size: 90%;
   font-style: italic;
+  color: #888;
 }
 
 .post-content {
   text-align: justify;
   position: relative;
-  padding: 20px;
+  /*padding: 10px;*/
 }
 
 .read-full-post-link {
   font-size: 14px;
   position: absolute;
-  right: 20px;
+  right: 0px;
 }
 
 /*****************************************************************************/
