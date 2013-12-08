@@ -20,6 +20,26 @@ a:hover {
 a {
   outline: none !important;
 }
+
+.button {
+  border: 1px solid rgba(0, 5, 121, 0.8);
+  text-decoration: none;
+  border-radius: 5px;
+  display: block;
+  font-size: 16px;
+  padding: 7px;
+  font-weight: 200;
+  color: #f2f2f2;
+  height: 100%;
+  background: #114C86;
+  box-shadow: 0 .1em .3em .1em rgba(0,0,0,.2);
+}
+
+.button:hover {
+  color: #f2f2f2;
+  box-shadow: inset 0 .1em .1em .1em rgba(0,0,0,.4);
+}
+
 /*****************************************************************************/
 /*
 /* Container
@@ -146,6 +166,49 @@ a {
 
 /*****************************************************************************/
 /*
+/* Pager
+/*
+/*****************************************************************************/
+.pager {
+  text-align: center;
+  margin: 100px auto 10px auto;
+}
+
+.pager a {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+}
+
+.pager .back {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.pager .next {
+  text-align: left;
+}
+
+.pager .back:before,
+.pager .next:after {
+  position: absolute;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 13px;
+}
+
+.pager .back:before {
+  left: 8px;
+  content: "‹";
+}
+
+.pager .next:after {
+  right: 8px;
+  content: "›";
+}
+
+/*****************************************************************************/
+/*
 /* Sidebar
 /*
 /*****************************************************************************/
@@ -247,23 +310,6 @@ a {
   border-radius: 5px;
   width: 100%;
   line-height: 16px;
-}
-
-.navigation a {
-  border: 1px solid rgba(0, 5, 121, 0.8);
-  text-decoration: none;
-  border-radius: 5px;
-  display: block;
-  font-size: 16px;
-  padding: 7px;
-  font-weight: 200;
-  height: 100%;
-  background: #114C86;
-  box-shadow: 0 .1em .3em .1em rgba(0,0,0,.2);
-}
-
-.navigation a:hover {
-  box-shadow: inset 0 .1em .1em .1em rgba(0,0,0,.4);
 }
 
 /*****************************************************************************/
