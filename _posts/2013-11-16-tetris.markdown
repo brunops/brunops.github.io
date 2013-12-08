@@ -28,7 +28,7 @@ The notion of finding a bug, writing a test for it and making sure it never come
 
 No fear of refactoring. Trust in your code. What else can you ask for? A nice UI you might say.. okay, after making the game work, just poked a bit more with the CSS, discovered that each piece should have it's own color, found the original <a target="_blank" href="http://en.wikipedia.org/wiki/Tetris#Colors_of_Tetriminos">colors used on the Atari version</a> of the game and we were good to go. Setting the color of the pieces actually required a bit of refactoring, which was fine only because I had tests! Thank you tests :D
 
-Well the resulting game is the one that you can see in the image bellow, there are still a lot of things that would be good to do, like add some animations, display the next piece, show some kind of score, but hey, the MVP is ready, the game is playable. And you can <a target="_blank" href="http://tetristdd.herokuapp.com">play it here</a>.
+Well the resulting game is the one that you can see in the image bellow, there are still a lot of things that would be good to do, like add some animations, display the next piece, show some kind of score, but hey, the MVP is ready, the game is playable. And you can <a target="_blank" href="/projects/tetris">play it here</a>.
 
 ![Tetris GUI final version](/assets/images/new-tetris.png)
 

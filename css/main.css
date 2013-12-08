@@ -64,6 +64,7 @@ a {
 
 .inner-content {
   padding: 20px;
+  position: relative;
 }
 
 .page-title {
