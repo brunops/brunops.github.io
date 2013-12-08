@@ -139,55 +139,60 @@ pre {
 
 /*****************************************************************************/
 /*
-/* Posts
+/* Lists
 /*
 /*****************************************************************************/
-.posts {
+.list {
   list-style: none;
   padding: 0;
 }
 
-.posts img {
+.list img {
   display: block;
   margin: 30px auto 0 auto;
   max-width: 250px;
 }
 
-.post {
+.list-item {
   margin-bottom: 60px;
   position: relative;
 }
 
-.full-post .post {
+.list-item-title {
   margin: 0;
 }
 
-.post-title {
-  margin: 0;
-}
-
-.post-header {
+.list-item-header {
   position: relative;
   font-size: 14px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
 }
 
-.post-header a:hover {
+.list-item-header a:hover {
   color: #3498db;
+}
+
+
+.list-item-content {
+  text-align: justify;
+  position: relative;
+  padding: 5px;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+.full-post .post {
+  margin: 0;
 }
 
 .date {
   font-style: italic;
   color: #888;
 }
-
-.post-content {
-  text-align: justify;
-  position: relative;
-  padding: 5px;
-}
-
 .read-full-post-link {
   font-size: 14px;
   position: absolute;

@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Blog
+title: Posts
 ---
 
-<ul class="posts">
+<ul class="list posts">
   {% for post in paginator.posts %}
-    <li class="post">
-      <header class="post-header">
-        <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <li class="list-item post">
+      <header class="list-item-header">
+        <h2 class="list-item-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <span class="date">{{ post.date | date_to_string }}</span>
       </header>
-      <div class="post-content">
+      <div class="list-item-content">
         <p>{{ post.excerpt }}</p>
         <a class="read-full-post-link" href="{{ post.url }}">&raquo; Read full post</a>
       </div>
