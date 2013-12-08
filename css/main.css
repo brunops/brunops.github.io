@@ -96,6 +96,12 @@ a {
   padding: 0;
 }
 
+.posts img {
+  display: block;
+  margin: 30px auto 0 auto;
+  max-width: 250px;
+}
+
 .post {
   margin-bottom: 60px;
   position: relative;
