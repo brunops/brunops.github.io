@@ -1,0 +1,52 @@
+#ascii-title {
+  font-size: 77%;
+  font-weight: bold;
+  margin-left: 43%;
+}
+
+.tetris {
+  background: #34495e;
+  width: 270px;
+  padding: 1px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.tetris div {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border: 1px solid #3B5269;
+}
+
+.tetris .piece {
+  border: 1px solid black;
+}
+
+.tetris .full1 {
+  background: #2ecc71;
+}
+
+.tetris .full2 {
+  background: #2980b9;
+}
+
+.tetris .full3 {
+  background: #c0392b;
+}
+
+.tetris .full4 {
+  background: #8e44ad;
+}
+
+.tetris .full5 {
+  background: #f1c40f;
+}
+
+.tetris .full6 {
+  background: #29EEEE;
+}
+
+.tetris .full7 {
+  background: #d35400;
+}
