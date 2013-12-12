@@ -1,0 +1,37 @@
+.todo-list-oo {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.todo-list-oo small {
+  margin: 20px 0;
+}
+
+.todo-list-oo {
+  border: none;
+  padding: 5px;
+  width: 65%;
+}
+
+.todo-list-oo ul {
+  padding: 0;
+}
+
+.todo-list-oo li {
+  text-align: justify;
+  list-style: none;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 3px;
+  font-family: 'The Girl Next Door', cursive;
+}
+
+.todo-list-oo li button {
+  float: right;
+  padding: 0;
+  height: 27px;
+  margin: 2px 5px 0 0;
+}
