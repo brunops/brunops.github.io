@@ -70,28 +70,37 @@ pre {
   overflow: auto;
 }
 
+/* Container */
+.container {
+  padding: 0 10px;
+}
+
 /*****************************************************************************/
 /*
 /* Content
 /*
 /*****************************************************************************/
 .content {
-  width: 75%;
-  margin: 50px auto;
+  margin: 0;
+  width: 100%;
+/*  width: 75%;
+  margin: 50px auto;*/
   background: #f2f2f2;
   border-radius: 5px;
   box-shadow: 0 .2em .5em 0em rgba(0,0,0,.4);
 }
 
 .inner-content {
-  padding: 20px;
+  /*padding: 20px;*/
+  padding: 70px 20px 20px 20px;
   position: relative;
 }
 
 .page-title {
   background: #114C86;
   padding: 8px 10px;
-  position: relative;
+  position: fixed;
+  z-index: 5;
   color: #f2f2f2;
   font-size: 14px;
   width: 100%;
@@ -107,8 +116,8 @@ pre {
   border-style: solid;
   border-color: #000 #000 transparent transparent;
   position: absolute;
-  bottom: -10px;
-  left: 0px;
+  top: 70px;
+  left: 10px;
 }
 
 .page-title:after {
@@ -119,8 +128,8 @@ pre {
   border-style: solid;
   border-color: #000 transparent transparent #000;
   position: absolute;
-  bottom: -10px;
-  right: 0px;
+  top: 70px;
+  right: 10px;
 }
 
 .page-title h1 {
@@ -249,6 +258,7 @@ pre {
   background: #2c3e50;
   color: #eee;
   text-align: center;
+  display: none;
 }
 
 .sidebar a {
@@ -350,9 +360,33 @@ pre {
 
 /* Tablets */
 @media only screen and (min-width: 600px) {
+  .page-title {
+    position: relative;
+  }
+
+  .page-title:before {
+    bottom: -10px;
+    left: 0px;
+  }
+
+  .page-title:after {
+    bottom: -10px;
+    right: 0px;
+  }
+
+  .inner-content {
+    padding: 20px;
+  }
+
   .sidebar {
+    display: block;
     position: relative;
     overflow: hidden;
+  }
+
+  .content {
+    width: 75%;
+    margin: 50px auto;
   }
 
   .navigation ul {
@@ -368,15 +402,22 @@ pre {
 /* Mobile */
 @media only screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
 
+  .container {
+    /*padding: 0 10px;*/
+  }
 
+  .content {
+/*    margin: 0;
+    width: 100%;*/
+  }
+
+  .sidebar {
+    /*display: none;*/
+  }
 }
 
 /* Desktop */
 @media only screen and (min-width: 900px) {
-  body {
-    background: #d2d2d2;
-  }
-
   .container {
     width: 75%;
   }
