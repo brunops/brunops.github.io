@@ -20,22 +20,6 @@
   </head>
   <body>
 
-    <div class="container">
-      <section class="content">
-        <header class="page-title">
-          <h1>{{ page.title }}</h1>
-        </header>
-        <div class="inner-content">
-          {{ content }}
-        </div>
-      </section>
-
-      <footer class="footer">
-        <p>Designed with <i class="fa fa-heart-o"></i>. Developed with <i class="fa fa-magic"></i> and <i class="fa fa-coffee"></i>.</p>
-        <p>Bruno Sanches, 2013</p>
-      </footer>
-    </div>
-
     <aside class="sidebar">
       <ul class="social-links">
         <li><a href="http://github.com/brunops" title="Github" target="_blank"><i class="fa fa-github"></i></a></li>
@@ -58,6 +42,22 @@
         </nav>
       </div>
     </aside>
+
+    <div class="container">
+      <section class="content">
+        <header class="page-title">
+          <h1>{{ page.title }}</h1>
+        </header>
+        <div class="inner-content">
+          {{ content }}
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Designed with <i class="fa fa-heart-o"></i>. Developed with <i class="fa fa-magic"></i> and <i class="fa fa-coffee"></i>.</p>
+        <p>Bruno Sanches, 2013</p>
+      </footer>
+    </div>
 
     <script>
       if(window.parent==window){var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-36734880-1']);_gaq.push(['_setDomainName','brunops.org']);_gaq.push(['_setAllowLinker',true]);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src='http://www.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();}

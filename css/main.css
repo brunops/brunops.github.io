@@ -4,7 +4,7 @@
 /*
 /*****************************************************************************/
 body {
-  background: #d2d2d2;
+  background: blue;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -75,9 +75,9 @@ pre {
 /* Container
 /*
 /*****************************************************************************/
-.container {
+/*.container {
   width: 75%;
-}
+}*/
 
 /*****************************************************************************/
 /*
@@ -256,14 +256,14 @@ pre {
 /*****************************************************************************/
 .sidebar {
   background: #2c3e50;
-  position: fixed;
+  color: #eee;
+/*  position: fixed;
   top: 0;
   right: 0;
   width: 25%;
   height: 100%;
-  box-shadow: inset 1em 0 3em -1em rgba(0,0,0,.6);
+  box-shadow: inset 1em 0 3em -1em rgba(0,0,0,.6);*/
   text-align: center;
-  color: #eee;
 }
 
 .sidebar a {
@@ -275,11 +275,11 @@ pre {
 /* Social Links
 /*
 /*****************************************************************************/
-.social-links {
+/*.social-links {
   width: 100%;
   margin: 5% auto 0 auto;
   padding: 0 0 0 10px;
-}
+}*/
 
 .social-links li {
   list-style: none;
@@ -372,3 +372,50 @@ pre {
   width: 80%;
   line-height: 0;
 }
+
+/* Tablets */
+@media only screen and (min-width: 600px) {
+  body {
+    background: red;
+  }
+
+  .sidebar {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+  }
+
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 900px) {
+  body {
+    background: #d2d2d2;
+  }
+
+  .container {
+    width: 75%;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    box-shadow: inset 1em 0 3em -1em rgba(0,0,0,.6);
+  }
+
+  .social-links {
+    width: 100%;
+    margin: 5% auto 0 auto;
+    padding: 0 0 0 10px;
+  }
+}
+
