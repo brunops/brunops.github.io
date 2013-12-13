@@ -309,7 +309,7 @@ pre {
   font-weight: 100;
   font-size: 36px;
   text-shadow: 0 1px 0 rgba(0,0,0,.6);
-  margin: 5% auto 0 auto;
+  margin: 20px auto 0 auto;
   line-height: 40px;
 }
 
@@ -324,7 +324,6 @@ pre {
 .about img {
   border: 5px solid #ccc;
   border-radius: 75px;
-  margin-top: 10%;
   width: 130px;
 }
 
@@ -416,6 +415,10 @@ pre {
     width: 100%;
     margin: 5% auto 0 auto;
     padding: 0 0 0 10px;
+  }
+
+  .about img {
+    margin-top: 10%;
   }
 }
 
