@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="/css/font-awesome-4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/main.css">
 
+    <!-- JavaScript -->
+    <script src="/js/lib/jquery.js"></script>
+    <script src="/js/main.js"></script>
+
   </head>
   <body>
 
@@ -50,7 +54,10 @@
           <span class="show-menu-icon">
             <i class="fa fa-bars"></i>
           </span>
+        </header>
 
+
+        <div class="mobile-menu">
           <nav class="mobile-navigation">
             <ul>
               <li><a href="/">Blog</a></li>
@@ -58,8 +65,9 @@
               <li><a href="/about">About</a></li>
             </ul>
           </nav>
+        </div>
 
-        </header>
+
         <div class="inner-content">
           {{ content }}
         </div>
