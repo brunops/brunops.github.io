@@ -373,9 +373,7 @@ pre {
   width: 100%;
   list-style: none;
   padding: 5px 0;
-  top: 8px;
   margin: 0;
-  position: absolute;
   box-shadow: 0 .5em .5em -.5em rgba(0,0,0,.4);
 }
 
