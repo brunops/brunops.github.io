@@ -7,7 +7,6 @@ title: TODO List
 
 <!-- Libraries -->
 <script src="javascripts/lib/underscore.js"></script>
-<script src="javascripts/lib/jquery.js"></script>
 
 <!-- Models -->
 <script src="javascripts/Item.js"></script>
