@@ -89,7 +89,7 @@ pre {
 }
 
 .inner-content {
-  padding: 70px 20px 20px 20px;
+  padding: 90px 20px 20px 20px;
   position: relative;
 }
 
@@ -415,6 +415,13 @@ pre {
   line-height: 0;
 }
 
+/* Mobile */
+@media only screen and (max-width: 599px) and (-webkit-min-device-pixel-ratio: 2) {
+  img.fork-github {
+    top: 60px !important;
+  }
+}
+
 /* Tablets */
 @media only screen and (min-width: 600px) {
   .page-title {
@@ -466,11 +473,6 @@ pre {
   .navigation li:last-child {
     margin-right: 0;
   }
-}
-
-/* Mobile */
-@media only screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
-
 }
 
 /* Desktop */
