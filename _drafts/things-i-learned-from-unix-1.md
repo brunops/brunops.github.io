@@ -8,7 +8,11 @@ categories:
 - regex
 ---
 ###1. The 's' stands for 'substitute'
-You'll probably see the pattern _sed 's/pattern1/pattern2/'_ very frequently. It basically means you're matching pattern1 and substituting for pattern2.
+You'll probably seen the following pattern very frequently.
+{% highlight bash %}
+sed 's/pattern1/pattern2/'
+{% endhighlight %}
+It basically means you're matching pattern1 and substituting for pattern2.
 
 ###2. The & operator is the full match
 Everything that was matched in pattern1 can be referenced in pattern2 with the & character. No need to enclose the whole regex in parentesis.
@@ -52,6 +56,13 @@ Okay, but that code will trigger five processes, one per each command, what you 
 {% highlight bash %}
 sed -e 's/a/A/g' -e 's/e/E/g' -e 's/i/I/g' -e 's/o/O/g' -e 's/u/U/g' filename
 {% endhighlight %}
+
+###7. The lonely comma is the content between two patterns
+You can print the content between to line matches with _sed_ using:
+{% highlight bash %}
+sed -n '/pattern1/,/pattern2/p' filename
+{% endhighlight %}
+The _-n_ means 'silent mode', and prevents _sed_ from outputting to _stdout_, but the _p_ flag at the end instructs _sed_ to print the lines that matched the command, result: the output is only the contents delimited by the patterns (including the pattern delimiters).
 
 ###Last. This guide will answer all your questions much better than this post
 [Sed - An Introduction and Tutorial by Bruce Barnett](http://www.grymoire.com/Unix/Sed.html)
