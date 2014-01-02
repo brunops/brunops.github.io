@@ -12,7 +12,8 @@ a[0] = 0; // [0]
 a[1] = 1; // [0, 1]
 a[2] = 2; // [0, 1, 2] you get the idea..
 
-a.hey = 123;           // [0, 1, 2]
+a.hey = 123;
+console.log(a);        // [0, 1, 2]
 console.log(a.length); // 3 - only the elements of the collection are counted
 
 console.log(a.hey);    // 123 yup, it's there
@@ -110,9 +111,26 @@ obj.sum.apply({ total: 50 }, [5, 5, 5, 5]); // outputs "70"
 obj.total; // still 12
 {% endhighlight %}
 
-Same thing. How to remember which is which? Array ends up with "y", so is apply. So there you go, works for me.. Anyway, there's always the MDN website for <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call" target="_blank">.call</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply" target="_blank">.apply</a>.
+Same thing. How to remember which is which? "Array" ends up with "y", so is "apply". So there you go, works for me. Anyway, there's always the MDN website for <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call" target="_blank">.call</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply" target="_blank">.apply</a>.
 
-So, going back to the _arguments_ as an Array issue, the usual way to solve this is to
+Going back to the _arguments_ as an Array issue, the usual way to solve this is to call the _.slice_ method from the Array prototype, which duplicates the result, leaving the original object intact. It is possible to directly call the Array method passing the _arguments_ as its context directly too.
+
+{% highlight javascript %}
+function fn() {
+  // duplicate arguments collection into a new Array
+  var argumentsAsArray = Array.prototype.slice.call(arguments);
+  console.log(argumentsAsArray.pop());
+
+  // calling Array.pop with arguments as its context
+  // actually modifies the arguments object
+  console.log(Array.prototype.pop.call(arguments));
+  console.log(Array.prototype.pop.call(arguments));
+}
+
+fn(1, 2, 3); // 3, 3 and 2
+{% endhighlight %}
+
+After all explanation, now comes the part that I wanted to talk about. Fooling the Array _.push_ method.
 
 Why would somebody use that? I don't know. Just cool to realize how stuff works and how you can use methods from other objects. When we know this stuff, the dolphin eventually appears.
 
