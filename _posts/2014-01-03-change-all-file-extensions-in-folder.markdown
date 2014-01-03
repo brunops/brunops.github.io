@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change all File Extensions in Folder
+title: Change all file extensions in a folder
 categories:
 - UNIX
 - sed
