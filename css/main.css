@@ -372,7 +372,7 @@ pre {
   width: 100%;
   z-index: 3; /* between page-title and content */
   left: 0;
-  top: -60px;
+  top: -70px;
 
   -webkit-transition: top .5s ease;
   -moz-transition: top .5s ease;
