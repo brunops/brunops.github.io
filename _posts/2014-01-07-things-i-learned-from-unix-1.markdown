@@ -17,7 +17,7 @@ sed 's/pattern1/pattern2/' filename
 It basically means you're matching pattern1 and substituting for pattern2.
 
 ###2. The & operator is the full match
-Everything that was matched in pattern1 can be referenced in pattern2 with the & character. No need to enclose the whole regex in parentesis.
+Everything that was matched in pattern1 can be referenced in pattern2 with the & character. No need to enclose the whole regex in parenthesis.
 {% highlight bash %}
 sed 's/.*/& bacon/' filename
 {% endhighlight %}
@@ -32,8 +32,8 @@ Sadly, there's no regex _+_ operator in the original sed implementation, and tha
 
 A workaround this issue in the original implementation, would be to force the matching of at least one character by changing the regex to _[a-z][a-z]*_
 
-###4. Escape ALL the parentesis \(
-Parentesis create matching groups. When creating a group in your matching pattern, the parentesis must be escaped.
+###4. Escape ALL the parenthesis \(
+Parenthesis create matching groups. When creating a group in your matching pattern, the parenthesis must be escaped.
 {% highlight bash %}
 sed 's/\(group1\)/sup \1/' filename
 {% endhighlight %}
