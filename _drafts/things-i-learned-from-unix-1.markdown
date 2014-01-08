@@ -33,22 +33,26 @@ Sadly, there's no regex _+_ operator in the original sed implementation, and tha
 A workaround this issue in the original implementation, would be to force the matching of at least one character by changing the regex to _[a-z][a-z]*_
 
 ###4. Escape ALL the parentesis \(
-When creating a group in your matching pattern, the parentesis must be escaped. I don't fully understand why, but it won't work otherwise.
+Parentesis create matching groups. When creating a group in your matching pattern, the parentesis must be escaped.
+{% highlight bash %}
+sed 's/\(group1\)/sup \1/' filename
+{% endhighlight %}
+I don't fully understand why, but it won't work otherwise.
 
 ###5. Any character may be used as a delimiter
-The backslash is probably the most common delimiter used, just like a regex in JavaScript. But it's not mandatory, _any_ character may be used as a delimiter.
+The backslash is probably the most common delimiter used, just like a regex in JavaScript. But it's not mandatory, any character may be used as a delimiter.
 
-The time I found it useful is when matching system paths. By changing the delimiter, from say _/_ to _:_, there's no need to escape all the backslashes, so
+It can be useful when matching system paths. By changing the delimiter, from say _/_ to _:_, there's no need to escape all the backslashes, so
 
 {% highlight bash %}
-sed 's/\/Users\/brunops\/projects/~\/projects/'
+sed 's/\/Users\/brunops\/projects/~\/projects/' filename
 {% endhighlight %}
 can become:
 {% highlight bash %}
-sed 's:/Users/brunops/projects:~/projects/'
+sed 's:/Users/brunops/projects:~/projects:' filename
 {% endhighlight %}
 
-###6. More than one expression in one command
+###6. More than one expression can be on the same command
 Have you ever wondered what that _-e_ option is? It stands for _expression_, and besides being optional when you have only one pattern, it can be useful when you have multiple. Let's see an example:
 
 Imagine a script that capitalizes all vogals. To do that you could pipe sed commands together like:
@@ -56,9 +60,9 @@ Imagine a script that capitalizes all vogals. To do that you could pipe sed comm
 cat filename | sed 's/a/A/g' | sed 's/e/E/g' | sed 's/i/I/g' | sed 's/o/O/g' | sed 's/u/U/g'
 {% endhighlight %}
 
-And it will work just fine, by the way, the _g_ flag modifier at the end stands for _global_, and means that all matches are going to be processed, only the first occurence in each line is matched by default.
+And it will work just fine. By the way, the _g_ flag modifier at the end stands for _global_, and means that all matches are going to be processed, only the first occurence in each line is matched by default.
 
-Okay, but that code will trigger five processes, one per each command, what you can do to achieve the same results while using only one sed process is to use the _-e_ option, and the code will give the exact same results, the command would be:
+Okay, but that code will trigger five processes, one per command, what you can do to achieve the same results while using only one sed process is to use the _-e_ option, and the code will give the exact same results, the command would be:
 {% highlight bash %}
 sed -e 's/a/A/g' -e 's/e/E/g' -e 's/i/I/g' -e 's/o/O/g' -e 's/u/U/g' filename
 {% endhighlight %}
