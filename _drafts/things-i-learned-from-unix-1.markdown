@@ -7,15 +7,21 @@ categories:
 - sed
 - regex
 ---
+'Sed' stands for _**s**tream **ed**itor_. Think of it as a program that edits a text file on a per line basis.
+
 ###1. The 's' stands for 'substitute'
-You'll probably seen the following pattern very frequently.
+You'll probably see the following pattern very frequently.
 {% highlight bash %}
-sed 's/pattern1/pattern2/'
+sed 's/pattern1/pattern2/' filename
 {% endhighlight %}
 It basically means you're matching pattern1 and substituting for pattern2.
 
 ###2. The & operator is the full match
 Everything that was matched in pattern1 can be referenced in pattern2 with the & character. No need to enclose the whole regex in parentesis.
+{% highlight bash %}
+sed 's/.*/& bacon/' filename
+{% endhighlight %}
+Add 'bacon' in every line, because everything gets better with bacon.
 
 ###3. The matching is greedy and there's no _+_ modifier
 When a simple matching pattern like _[a-z]*_, that matches a sequence of zero or more characters from a to z is used, it may not behave exactly the way you'd expect. In "abc 123" it would match "abc", but in "123 abc" it would match "", an empty string. Because the matching is greedy and it's going to try to find the biggest match as soon as possible.
