@@ -14,6 +14,14 @@ title: Projects
   </li>
   <li class="list-item">
     <header class="list-item-header">
+      <h2 class="list-item-title"><a href="/projects/bouncing-balls">Bouncing Balls</a></h2>
+    </header>
+    <div class="list-item-content">
+      <p>Just some canvas play. Balls bouncing everywhere. Keep clicking and they'll keep bouncing.</p>
+    </div>
+  </li>
+  <li class="list-item">
+    <header class="list-item-header">
       <h2 class="list-item-title"><a href="/projects/todo-list-oo">TODO List</a></h2>
     </header>
     <div class="list-item-content">
