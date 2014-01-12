@@ -18,6 +18,7 @@ title: Projects
     </header>
     <div class="list-item-content">
       <p>Just some canvas play. Balls bouncing everywhere. Keep clicking and they'll keep bouncing.</p>
+      <a href="/projects/bouncing-balls"><img alt="Bouncing Balls" src="/assets/images/bouncing-balls.png"></a>
     </div>
   </li>
   <li class="list-item">
