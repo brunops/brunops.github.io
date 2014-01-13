@@ -43,81 +43,79 @@ window.onload = (function() {
     this.y = this.y + (this.vertical ? - this.verticalSpeed : this.verticalSpeed);
   };
 
-  function BouncingBalls() {
-    this.init();
-  }
+  var BouncingBalls = {
+    colors: [
+      'red',
+      'blue',
+      'indigo',
+      '#b4d455',
+      'slateblue',
+      '#333',
+      'orange'
+    ],
 
-  BouncingBalls.colors = [
-    'red',
-    'blue',
-    'indigo',
-    '#b4d455',
-    'slateblue',
-    '#333',
-    'orange'
-  ];
+    collection: [],
 
-  BouncingBalls.prototype.init = function() {
-    this.collection = [];
+    init: function() {
+      BouncingBalls.canvas  = document.getElementById('canvas');
+      BouncingBalls.context = BouncingBalls.canvas.getContext('2d');
 
-    this.canvas  = document.getElementById('canvas');
-    this.context = canvas.getContext('2d');
+      BouncingBalls.bindEvents();
 
-    this.bindEvents();
+      setInterval(BouncingBalls.tick, 20);
+    },
 
-    setInterval(this.tick.bind(this), 20);
-  };
+    bindEvents: function() {
+      BouncingBalls.canvas.addEventListener('click', function(e) {
+        var randomColor = BouncingBalls.colors[Math.floor(Math.random() * BouncingBalls.colors.length)],
+            rect = e.target.getBoundingClientRect(),
+            x = e.offsetX || e.pageX - rect.left - window.scrollX,
+            y = e.offsetY || e.pageY - rect.top - window.scrollY;
 
-  BouncingBalls.prototype.bindEvents = function() {
-    var self = this;
+        BouncingBalls.add(x, y, 10, randomColor);
+      });
+    },
 
-    this.canvas.addEventListener('click', function(e) {
-      var randomColor = BouncingBalls.colors[Math.floor(Math.random() * BouncingBalls.colors.length)],
-          rect = e.target.getBoundingClientRect(),
-          x = e.offsetX || e.pageX - rect.left - window.scrollX,
-          y = e.offsetY || e.pageY - rect.top - window.scrollY;
+    tick: function() {
+      // this weird statement clears the canvas
+      BouncingBalls.canvas.width = BouncingBalls.canvas.width;
 
-      self.add(x, y, 10, randomColor);
-    });
-  };
+      for (var i = 0; i < BouncingBalls.collection.length; ++i) {
+        BouncingBalls.collection[i].tick();
+        BouncingBalls.handleNewCoords(BouncingBalls.collection[i]);
+        BouncingBalls.collection[i].draw(BouncingBalls.context);
+      }
+    },
 
-  BouncingBalls.prototype.tick = function() {
-    canvas.width = canvas.width;
-    for (var i = 0; i < this.collection.length; ++i) {
-      this.collection[i].tick();
-      this.handleNewCoords(this.collection[i]);
-      this.collection[i].draw(this.context);
+    handleNewCoords: function(ball) {
+      if (ball.x - ball.radius < 0) {
+        ball.x = ball.radius;
+        ball.invertHorizontal();
+      }
+
+      if (ball.x + ball.radius > BouncingBalls.canvas.width) {
+        ball.x = BouncingBalls.canvas.width - ball.radius;
+        ball.invertHorizontal();
+      }
+
+      if (ball.y - ball.radius < 0) {
+        ball.y = ball.radius;
+        ball.invertVertical();
+      }
+
+      if (ball.y + ball.radius > BouncingBalls.canvas.height) {
+        ball.y = BouncingBalls.canvas.height - ball.radius;
+        ball.invertVertical();
+      }
+    },
+
+    add: function(x, y, radius, color) {
+      var newBall = new Ball(x, y, radius, color);
+      newBall.draw(BouncingBalls.context);
+
+      BouncingBalls.collection.push(newBall);
     }
   };
 
-  BouncingBalls.prototype.handleNewCoords = function(ball) {
-    if (ball.x - ball.radius < 0) {
-      ball.x = ball.radius;
-      ball.invertHorizontal();
-    }
-
-    if (ball.x + ball.radius > this.canvas.width) {
-      ball.x = this.canvas.width - ball.radius;
-      ball.invertHorizontal();
-    }
-
-    if (ball.y - ball.radius < 0) {
-      ball.y = ball.radius;
-      ball.invertVertical();
-    }
-
-    if (ball.y + ball.radius > this.canvas.height) {
-      ball.y = this.canvas.height - ball.radius;
-      ball.invertVertical();
-    }
-  };
-
-  BouncingBalls.prototype.add = function(x, y, radius, color) {
-    var newBall = new Ball(x, y, radius, color);
-    newBall.draw(this.context);
-
-    this.collection.push(newBall);
-  };
-
-  new BouncingBalls();
+  BouncingBalls.init();
 })();
