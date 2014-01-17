@@ -6,6 +6,10 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width">
 
+    {% if page.image %}
+      <meta content="{{ site.url }}/assets/images/{{ page.image }}" property="og:image">
+    {% endif %}
+
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Jockey+One|Open+Sans' rel='stylesheet' type='text/css'>
 
