@@ -8,9 +8,8 @@
 
     <meta name="decription" content="{% if page.description %}{{ page.description}}{% else %}{{ site.description }}{% endif %}">
 
-    {% if page.image %}
-      <meta content="{{ site.url }}/assets/images/{{ page.image }}" property="og:image">
-    {% endif %}
+    <!-- Facebook -->
+    <meta property="og:image" content="{{ site.url }}/assets/images/{% if page.image %}{{ page.image }}{% else %}{{ 'brunops.jpg' }}{% endif %}">
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Jockey+One|Open+Sans' rel='stylesheet' type='text/css'>
