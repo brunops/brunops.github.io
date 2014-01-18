@@ -1,4 +1,6 @@
 name: brunops.org
+description: Bruno Sanches personal website with projects, notes and thoughts
+
 markdown: redcarpet
 pygments: true
 permalink: /:title
