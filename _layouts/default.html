@@ -14,7 +14,7 @@
     <meta property="og:image" content="{{ site.url }}/assets/images/{% if page.image %}{{ page.image }}{% else %}{{ 'brunops.jpg' }}{% endif %}">
     <meta property="og:description" content="{% if page.description %}{{ page.description}}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:url" content="{{ site.url }}{{ page.url | remove:'index.html' }}">
-
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}blog{% endif %}"/>
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Jockey+One|Open+Sans' rel='stylesheet' type='text/css'>
