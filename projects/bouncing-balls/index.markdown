@@ -8,6 +8,7 @@ image: bouncing-balls.png
   .canvas-wrapper {
     border: 5px solid black;
     width: 500px;
+    height: 500px;
     margin: 0 auto;
   }
 </style>
