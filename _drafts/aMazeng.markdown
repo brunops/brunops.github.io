@@ -1,1 +1,39 @@
-I went to the the first Hackathon at Dev Bootcamp on my last days at San Francisco, not with the intention to hack, just to be there you know, ppl gotta sleep..
+---
+layout: post
+title: aMazeng
+categories:
+- node.js
+- JavaScript
+- sockets
+---
+This post is kind of late, but I'll do it anyways.
+
+I went to the the _First Annual DBC Holiday Hackathon_ at Dev Bootcamp on my last days at San Francisco, it was Dec 14th, 2014.
+
+I actually didn't have the intention to hack, I was hacking all day long everyday, like 15 hours a day, and knew from previous hackathons how daunting it can be. So I decided just to be there to see the other projects, have fun, free pizza, free beer, but still, sleep. Didn't join any teams as I wouldn't be there for the entire night and feel bad for the abandoning them for a bunch of hours to sleep.
+
+As I stayed there, everybody was really commited to their team and project, so I started to hack on my own stuff to not disturb them.
+
+I heard about algorithms that generate random mazes a long time ago, and wanted to understand how it worked. Found about [DFS (Depth First Search)](http://en.wikipedia.org/wiki/Maze_generation_algorithm#Depth-first_search) and decided to implement it with pure vanilla Object Oriented JavaScript.
+
+It's a straight forward recursive algorithm. Consisting on a matrix of "rooms" with 4 walls, randomnly chose one of the rooms, mark it as explored, for each neighbor (randomnly chosen as well) that is yet to be explored, destroy the walls between them, and recurse to that room.
+
+The algorithm garantees that it will end up visiting all the rooms and that ends up creating a maze. So I implemented it, and for my surprise, no infinite loop on it's first execution! Awesome news!
+
+But then, how to know if it actually worked? It was just a matrix in memory with no way to visualize it. So the next step was to create a HTML document with a simple table and with the correct classes, so I could use CSS to play with each cell border to finally SEE something. And then..
+
+![Everything went better than expected](/assets/images/better-than-expected.png)
+
+So I tweaked the code a little bit, added a player (a.k.a _a background color on a table cell_) that could move around the maze and went home to sleep. A bit proud of myself haha.
+
+I probably got something around 6 hours of sleep and returned to DBC with still 5 or 6 hours before the presentations and the answer of how to make the maze a bit fun. So I wanted to put two players against eachother and see who gets out of the maze first. Ah, using Node.js and sockets. Using [socket.io](http://socket.io/) went better than expected as well, so I asked if I could still participate in the hackthon, and they let me in. And pressure is great motivation to finish things.
+
+I got the main features working one hour before the presentations, so there was still time for a quick layout, add some links, google analytics, and display messages for the players and pushing to Heroku. And the results can be seen <a href="http://amazeng.herokuapp.com" target="_blank">here</a>.
+
+<a href="http://amazeng.herokuapp.com" target="_blank">![aMazeng](/assets/images/amazeng.png)</a>
+
+I had some problems with maze synchronization (display same maze to both competitors), and still accept any number of players and keep pairing them together. Sometimes some sockets get lost and you may end up "waiting for enemy to connect" forever (just refresh in a new window that you should get a new socket), but overall, it works really nicely :)
+
+The presentation was really fun, specially when I said how I had slept (most people slept there for just a couple hours) and did the stuff by myself. And of course, when saying that anybody could connect and lost the games in front of everybody. Twice :P
+
+In the end, the project was one of the winners of the hackathon for "most creative product", and [they actually wrote about it before I did](http://devbootcamp.com/2013/12/20/first-annual-dbc-holiday-hackathon/). Shame on me. Check it out on <a href="http://amazeng.herokuapp.com" target="_blank">Heroku</a> and its <a href="http://github.com/brunops/aMazeng" target="_blank">GitHub repo</a>.
