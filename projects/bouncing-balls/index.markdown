@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Bouncing Balls
+description: Balls bouncing in a canvas
+image: bouncing-balls.png
 ---
 <style>
   .canvas-wrapper {
