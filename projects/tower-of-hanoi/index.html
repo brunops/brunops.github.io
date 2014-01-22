@@ -5,6 +5,13 @@ image: tower-of-hanoi.png
 ---
 <link rel="stylesheet" href="style.css">
 
+<p>Animated solution for <a href="http://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">Tower of Hanoi</a> puzzle. The objective is to move all disks from one tower to another, according to the following constraints:</p>
+<ol>
+  <li>Only one disk can be moved at a time.</li>
+  <li>Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack i.e. a disk can only be moved if it is the uppermost disk on a stack.</li>
+  <li>No disk may be placed on top of a smaller disk.</li>
+</ol>
+
 <canvas id="canvas"></canvas>
 
 <p id="controls" class="center">
@@ -13,6 +20,10 @@ image: tower-of-hanoi.png
   <button id="update-disks-btn" for="total-disks">Update</button>
 </p>
 <p id="error-msg" class="center"></p>
+
+<p>The number of disks can be updated and the animation will be restarted.</p>
+<p>Although the algorithm can eventually solve the puzzle for any given number, because it's complexity is O(2^n), for a given large number we wouldn't be alive to see the solution. So the maximum allowed number of disks is 10.</p>
+<p>Full source code of the project can be found <a href="https://github.com/brunops/canvas/tree/master/tower-of-hanoi" target="_blank">here</a>.</p>
 
 <script src="tower-of-hanoi.js"></script>
 <script src="tower-animation.js"></script>
