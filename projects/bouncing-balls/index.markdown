@@ -18,6 +18,6 @@ Click on the canvas
   <canvas id="canvas" width="500px" height="500px"></canvas>
 </div>
 
-Canvas play with pure JavaScript. The source of the project can be found <a href="http://github.com/brunops/canvas" target="_blank">here</a>.
+Canvas play with pure JavaScript. The source of the project can be found <a href="https://github.com/brunops/canvas/tree/master/bouncing-balls" target="_blank">here</a>.
 
 <script src="bouncing-balls.js"></script>
