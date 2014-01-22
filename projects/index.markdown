@@ -4,6 +4,17 @@ title: Projects
 ---
 
 <ul class="list projects-list">
+  <!-- Tower of Hanoi -->
+  <li class="list-item">
+    <header class="list-item-header">
+      <h2 class="list-item-title"><a href="/projects/tower-of-hanoi">Tower of Hanoi</a></h2>
+    </header>
+    <div class="list-item-content">
+      <p>Animated solution for <a href="http://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">Tower of Hanoi</a> puzzle in a canvas.</p>
+      <a href="/projects/tower-of-hanoi"><img alt="Bouncing Balls" src="/assets/images/tower-of-hanoi.png"></a>
+    </div>
+  </li>
+
   <!-- aMazeng -->
   <li class="list-item">
     <header class="list-item-header">
