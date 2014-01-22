@@ -5,7 +5,7 @@ categories:
 - JavaScript
 - Algorithms
 image: tower-of-hanoi.png
-excerpt: I always see the <a href="http://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">Tower of Hanoi</a> problem exemple when reading about recursion, but I honestly had never implemented it, so I decided to understand it. I mean, should be easy.. after all, it's cited everywhere..<a href="/projects/tower-of-hanoi"><img alt="Tower of Hanoi Animation" src="/assets/images/tower-of-hanoi.png"></a>
+excerpt: I always see the <a href="http://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">Tower of Hanoi</a> problem exemple when reading about recursion, but I honestly had never implemented it, so I decided to understand it. I mean, should be easy.. after all, it's cited everywhere..<a href="/tower-of-hanoi"><img alt="Tower of Hanoi Animation" src="/assets/images/tower-of-hanoi.png"></a>
 ---
 I always see the <a href="http://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">Tower of Hanoi</a> problem exemple when reading about recursion, but I honestly had never implemented it, so I decided to understand it. I mean, should be easy.. after all, it's cited everywhere..
 

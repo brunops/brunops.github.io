@@ -2,7 +2,7 @@
 layout: post
 title: Tetris
 date: '2013-11-16T23:13:00-08:00'
-excerpt: I chose Tetris as my somewhat bigger project to practice TDD. <a href="/projects/tetris"><img alt="Tetris GUI first version" src="/assets/images/new-tetris.png"></a>
+excerpt: I chose Tetris as my somewhat bigger project to practice TDD. <a href="/tetris"><img alt="Tetris GUI first version" src="/assets/images/new-tetris.png"></a>
 image: new-tetris.png
 ---
 I chose Tetris as my somewhat bigger project to practice TDD.
