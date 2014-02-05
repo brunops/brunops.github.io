@@ -61,7 +61,7 @@ myFunction(1, 2, 3);
 
 "_But I want to use arguments as an Array!_". Okay, it's JavaScript, let's make the duck quack.
 
-First of all, Array methods are defined in it's prototype, I won't get into details about it here, as it is a long topic, but in case you don't know, think of it as a shared property where all Array objects have their methods defined.
+First of all, Array methods are defined in its prototype, I won't get into details about it here, as it is a long topic, but in case you don't know, think of it as a shared property where all Array objects have their methods defined.
 
 So, a quick example
 {% highlight javascript %}
@@ -72,7 +72,7 @@ console.log(a.push === Array.prototype.push);   // true
 console.log(a.slice === Array.prototype.slice); // true
 {% endhighlight %}
 
-Believe me, they are all there. What happens is, when a method is called in an Array, it's _context_, in other words, the _this_ keyword inside the function is set as the _object instance_, the _var a_ in the examples.
+Believe me, they are all there. What happens is, when a method is called in an Array, its _context_, in other words, the _this_ keyword inside the function is set as the _object instance_, the _var a_ in the examples.
 
 "_So they are the same function, can we call the Array.prototype.push directly?_". Yes, but don't. Bad things will happen.
 
