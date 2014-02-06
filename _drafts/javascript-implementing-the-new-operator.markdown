@@ -1,5 +1,5 @@
 ---
-title: JavaScript - Implementing the new operator
+title: JavaScript - Rewriting the new operator
 layout: post
 categories:
 - JavaScript
@@ -19,13 +19,14 @@ function Person() {}
 
 Can't get simpler than that.
 
-Second, let's define our _newNew_ interface. It's not possible to define an operator, so let's start with a function that receives a constructor function and returns a new instance of that object.
+Second, let's define our _newNew_ interface. It's not possible to define an operator, so a function that receives a constructor function and returns a new instance of that object will do.
 
 {% highlight javascript %}
 function newNew(constructor) {
-  var obj = {};   // create a new object literal
+  // create a new object literal
+  var obj = {};
 
-  return obj;     // return new object
+  return obj;
 }
 
 console.log(newNew(Person) instanceof Person); // false!
@@ -35,12 +36,85 @@ Okay, that's a start. But the function is simply returning a new object literal,
 
 {% highlight javascript %}
 function newNew(constructor) {
-  var obj = {};   // create a new object literal
+  // create a new object literal
+  var obj = {};
 
+  // set object prototype as the constructor's prototype
   obj.__proto__ = constructor.prototype;
 
-  return obj;     // return new object
+  return obj;
 }
 
-console.log(newNew(Person) instanceof Person); // false!
+console.log(newNew(Person) instanceof Person); // true
 {% endhighlight %}
+
+The **\_\_proto\_\_** property exposes the Prototype of an object. The **prototype** property is exclusive to functions. It's important to say that the **\_\_proto\_\_** property is deprecated and should not me used in production code, ES6 provides _Object.setPrototypeOf_ to mutate an object prototype, more information can be found [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto).
+
+Prototypes are a convenient way to define types of objects. The key points are:
+
+- Objects have an implicit property called **constructor** which is a function, and tells which constructor function the object was created from (like Array, Number, Date, or **Person** in the example)
+- Functions have the **prototype** property, that is an **object** or **null**
+- Objects have access to the properties of the **prototype** of its **constructor**
+- The **constructor** property of an object cannot be changed
+- The **\_\_proto\_\_** property exposes the object's prototype
+
+This is indeed confusing, and further reading about prototypes is advised.
+
+With this in mind, let's move forward. The new line defines the new object's type, and the test **newNew(Person) instanceof Person** will be now **true**. But there's still one thing missing, what if the constructor function takes arguments for its initialization?
+
+{% highlight javascript %}
+function Person(firstName, lastName) {
+  this.firstName = firstName || "Carl";
+  this.lastName  = lastName  || "Sagan";
+}
+
+// First and Last name property set properly in "person" object
+var person = new Person("Derp");
+console.log(person.firstName === "Derp");  // true
+console.log(person.lastName  === "Sagan"); // true
+
+// Fail!
+// Properties are undefined - they were not even set
+var person2 = newNew(Person, "Derp");
+console.log(person2.firstName === "Derp");  // false
+console.log(person2.lastName  === "Sagan"); // false
+{% endhighlight %}
+
+In this case, our **newNew** function can't handle the arguments. Fortunately, that's an one liner easy fix. And here is the full final code.
+
+{% highlight javascript %}
+function Person(firstName, lastName) {
+  this.firstName = firstName || "Carl";
+  this.lastName  = lastName  || "Sagan";
+}
+
+function newNew(constructor) {
+  // create a new object literal
+  var obj = {};
+
+  // set object prototype as the constructor's prototype
+  obj.__proto__ = constructor.prototype;
+
+  // call constructor function with obj as it's context
+  // together with all arguments
+  constructor.apply(obj, Array.prototype.slice.call(arguments, 1));
+
+  return obj;
+}
+
+// Properties set Properly
+var person2 = newNew(Person, "Derp");
+console.log(person2.firstName === "Derp");  // true
+console.log(person2.lastName  === "Sagan"); // true
+{% endhighlight %}
+
+The last added line takes care of calling the constructor function with it's context (the **this** value) set to the new object using _apply_. The long _slice(1)_ call gets all arguments but the constructor itself and return them as an array.
+
+And finally the **newNew** works as expected!
+
+
+
+
+
+
+
