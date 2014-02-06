@@ -5,7 +5,7 @@ categories:
 - node.js
 - JavaScript
 - sockets
-excerpt: This is about <a href="http://aMazeng.herokuapp.com" target="_blank">aMazeng</a>, the project that I did at the _First Annual DBC Holiday Hackathon_ at Dev Bootcamp on my last days at San Francisco, it was Dec 14th, 2014. It's kind of late, but I'll do it anyways. <a href="/aMazeng"><img alt="aMazeng" src="/assets/images/amazeng.png"></a>
+excerpt: This is about <a href="http://aMazeng.herokuapp.com" target="_blank">aMazeng</a>, the project that I did at the <em>First Annual DBC Holiday Hackathon</em> at Dev Bootcamp on my last days at San Francisco, it was Dec 14th, 2014. It's kind of late, but I'll do it anyways. <a href="/aMazeng"><img alt="aMazeng" src="/assets/images/amazeng.png"></a>
 image: amazeng.png
 ---
 This is about aMazeng, the project that I did at the _First Annual DBC Holiday Hackathon_ at Dev Bootcamp on my last days at San Francisco, it was Dec 14th, 2014. It's kind of late, but I'll do it anyways.
