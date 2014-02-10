@@ -44,6 +44,13 @@ a {
   box-shadow: inset 0 .1em .1em .1em rgba(0,0,0,.4);
 }
 
+blockquote {
+  border-left: 3px solid #114C86;
+  margin: 0;
+  font-style: italic;
+  padding-left: 30px;
+}
+
 /*****************************************************************************/
 /*
 /* Syntax highlight
