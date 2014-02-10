@@ -5,8 +5,10 @@ categories:
 - C
 - Software Craftsmanship
 ---
-<blockquote>Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
-Antoine de Saint-Exupéry</blockquote>
+<blockquote>
+<p>Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.</p>
+<p>-- Antoine de Saint-Exupéry</p>
+</blockquote>
 Are you able to write your code in less lines? I'm always asking myself this question. I consider it to be a great way to improve coding skills, I mean, yeah right, you've got your stuff working, but, are you able to improve it? I'm not saying to sacrifice legibility towards less lines, but instead, to face it as an exercise, to test your own abilities. A way to dig deep into your programming language syntax peculiarities.
 
 As soon as I started programming, I considered less code as better code. I sure changed my mind about that now, as you can see in <a href="/get-better-by-challenging-yourself">Get better by challenging yourself</a>, but I still think this is a great way to really understand how statements work and interact with each other.
