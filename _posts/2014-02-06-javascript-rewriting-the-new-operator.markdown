@@ -8,7 +8,8 @@ categories:
 Implementing something is the best way to really understand something. And this post will show how it's possible to emulate the _new_ JavaScript operator. Developing a language functionality using itself is a nice way to see how flexible it is.
 
 <blockquote>
-'Everything is vague to a degree you do not realize till you have tried to make it precise.' - Bertrand russell
+<p>Everything is vague to a degree you do not realize till you have tried to make it precise.</p>
+<p>-- Bertrand russell</p>
 </blockquote>
 
 First of all, let's define a simple constructor function to play with.
