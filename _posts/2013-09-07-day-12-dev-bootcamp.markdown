@@ -9,7 +9,7 @@ Yes, I'm having a hard time keeping this blog up to date. I'm using the weekends
 Friday. I thought I knew something about <a target="_blank" href="http://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a>, but each page of <a target="_blank" href="http://www.poodr.com/">POODR</a> just shows me how much I don't. Awesome.
 
 <blockquote>
-  <em>"Your design challenge is to manage dependencies so that each class has the fewest possible; a class should know just enough to do its job and not one thing more."</em>
+  <p>Your design challenge is to manage dependencies so that each class has the fewest possible; a class should know just enough to do its job and not one thing more.</p>
 </blockquote>
 
 Defining a Hash as the parameters of a method is a good way to remove the dependency of the knowing the number and order of arguments from the caller.

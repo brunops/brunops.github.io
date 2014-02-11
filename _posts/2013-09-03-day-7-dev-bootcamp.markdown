@@ -11,13 +11,19 @@ Okay, so I stopped today, and tried to think about everything I wrote yesterday.
 
 I have basically spent all of my time updating this blog and reading <a target="_blank" href="http://www.poodr.com/">POODR</a> first chapters and one or other challenge. Here are some awesome quotes from the book:
 <blockquote>
-  <em>"Object oriented design is about managing dependencies. Changing software is like gravity."</em>
+  <p>Object oriented design is about managing dependencies. Changing software is like gravity.</p>
+</blockquote>
 
-  <em>"Designs that anticipate specific future requirements almost always end badly. Practical design does not anticipate what will happen to your application, it merely accepts that something will and that, in the present, you cannot know what. It doesn’t guess the future; it preserves your options for accommodating the future. It doesn’t choose; it leaves you room to move."</em>
+<blockquote>
+  <p>Designs that anticipate specific future requirements almost always end badly. Practical design does not anticipate what will happen to your application, it merely accepts that something will and that, in the present, you cannot know what. It doesn’t guess the future; it preserves your options for accommodating the future. It doesn’t choose; it leaves you room to move.</p>
+</blockquote>
 
-  <em>"Design is more the art of preserving changeability than it is the act of achieving perfection."</em>
+<blockquote>
+  <p>Design is more the art of preserving changeability than it is the act of achieving perfection.</p>
+</blockquote>
 
-  <em>"A class should do the smallest possible useful thing; that is, it should have a single responsibility."</em>
+<blockquote>
+  <p>A class should do the smallest possible useful thing; that is, it should have a single responsibility.</p>
 </blockquote>
 
 Simply beautiful, isn't it?
