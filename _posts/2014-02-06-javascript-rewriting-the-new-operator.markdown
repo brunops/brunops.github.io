@@ -5,7 +5,7 @@ categories:
 - JavaScript
 - Monkey Patching
 ---
-Implementing something is the best way to really understand something. And this post will show how it's possible to emulate the _new_ JavaScript operator. Developing a language functionality using itself is a nice way to see how flexible it is.
+Implementing something is the best way to really understand it. And this post will show how it's possible to emulate the _new_ JavaScript operator. Developing a language functionality using itself is a nice way to see how flexible it is.
 
 <blockquote>
 <p>Everything is vague to a degree you do not realize till you have tried to make it precise.</p>
