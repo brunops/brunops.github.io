@@ -8,6 +8,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+  font-size: 1.8em;
+}
+
 h1, h2, h3, h4 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -112,6 +116,7 @@ pre {
   color: #f2f2f2;
   font-size: 14px;
   width: 100%;
+  height: 55px;
   left: -10px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.3);
 }
@@ -448,6 +453,12 @@ pre {
 
 /* Mobile */
 @media only screen and (max-width: 599px) and (-webkit-min-device-pixel-ratio: 2) {
+  .page-title h1 {
+    width: 80%;
+    font-size: 20px;
+    margin: 5px 0 5px 20px;
+  }
+
   img.fork-github {
     top: 60px !important;
   }
