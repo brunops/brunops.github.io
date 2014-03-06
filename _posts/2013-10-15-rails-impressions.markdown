@@ -11,13 +11,13 @@ I'm trying to convince myself that this is a good thing, and that convention ove
 
 Right now, I think Rails knows too much. Let me explain, we were split into groups and we have decided to do everything with TDD.
 
-Everything was going well while creating all my tests inside the <code>/spec</code> folder. All models, controllers and integrations tests..
+Everything was going well while creating all my tests inside the `/spec` folder. All models, controllers and integrations tests..
 
 After realizing that they were in the wrong place, I just thought "<em>cool, so now I just create a quick branch to reorganize my tests into its folders, send a pull request and keep going, gimme 20 minutes</em>". So naive..
 
-So I created the <code>models</code>, <code>controllers</code> and <code>integrations</code> folders, moved some files around and just ran the tests before committing to make sure everything was working when suddenly.. tests stopped working. So cool.
+So I created the `models`, `controllers` and `integrations` folders, moved some files around and just ran the tests before committing to make sure everything was working when suddenly.. tests stopped working. So cool.
 
-A lot of "<em>if the file is in <code>/spec</code> it works, if the exact same file is in <code>/models</code>, it doesn't</em>", a couple of "<em>if the name of the folder is changed the tests work, if it's <code>models</code> it doesn't, and I just created this folder!</em>".
+A lot of "<em>if the file is in `/spec` it works, if the exact same file is in `/models`, it doesn't</em>", a couple of "<em>if the name of the folder is changed the tests work, if it's `models` it doesn't, and I just created this folder!</em>".
 
 So, long frustration story short, Rails and <a target="_blank" href="https://relishapp.com/rspec/rspec-rails/v/2-14/docs">RSpec</a> have special naming conventions and expect some exact folder structure to work properly. It actually provides different classes for testing, according to what you are testing. So things that you use for testing controllers might not work when testing models.
 

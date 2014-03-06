@@ -33,6 +33,6 @@ end
 Person.define_instance_variables("awesome", "instance", "variables")
 {% endhighlight %}
 
-In this example, you can define any instance variables you want inside the Person class, by calling its class method define_instance_variables, which will programmatically define the instance variables and its getters and setters. On the fly. Pretty cool, huh!?
+In this example, you can define any instance variables you want inside the Person class, by calling its class method `define_instance_variables`, which will programmatically define the instance variables and its getters and setters. On the fly. Pretty cool, huh!?
 
 Not saying this is a good design, or that you should do this, just saying you can. :)

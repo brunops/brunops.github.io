@@ -10,6 +10,7 @@ categories:
 Every time after starting a new fresh install of Drupal in my Linux box I always have to set some permissions to the hierarchy structure to make it work properly.
 
 As I always need to hunt the commands over again, I've decided to put everything in one place so I can easily remember.
+
 {% highlight bash %}
 # Include your user in www-data group
 # This command needs to be run only once

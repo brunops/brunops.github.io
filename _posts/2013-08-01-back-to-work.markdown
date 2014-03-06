@@ -7,4 +7,4 @@ Just got back from my vacation, backpacking through Europe, schedule was: Helsin
 
 ![Back to work](/assets/images/back-to-work.jpg)
 
-No excuses anymore, going back full time to my TODO list and all preparation work to Dev Bootcamp, just need some Ruby &gt;)
+No excuses anymore, going back full time to my TODO list and all preparation work to Dev Bootcamp, just need some Ruby ;)

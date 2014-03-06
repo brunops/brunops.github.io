@@ -13,6 +13,7 @@ Friday. I thought I knew something about <a target="_blank" href="http://en.wiki
 </blockquote>
 
 Defining a Hash as the parameters of a method is a good way to remove the dependency of the knowing the number and order of arguments from the caller.
+
 {% highlight ruby %}
 class Foo
   def initialize(args)
@@ -28,6 +29,7 @@ If the parameters of the Foo class change, you won't need to make a change on ev
 The <strong>||</strong> operator acts as an OR condition, so even if <strong>:foobar</strong> is a valid key of the <strong>args</strong> <em>Hash</em>, but set to <em>false</em> or <em>nil</em>, then the condition will fail, and <em>true</em> will be the default value. Unlike the <strong>[]</strong> method that returns nil for missing keys, the <strong>fetch()</strong> method actually expects the key to be present and offers ways to handle missing keys (the second argument in the example).
 
 Okay, it's really cool to learn new things, but I have to admit, the best part of my day was discovering <strong>sl</strong> and <strong>cmatrix</strong> programs. You can install it using <a target="_blank" href="http://brew.sh/">Brew</a> on a mac, or apt-get on Linux (no clue on Windows, sorry):
+
 {% highlight bash %}
 brew install sl
 brew install cmatrix
