@@ -55,6 +55,12 @@ blockquote {
   padding-left: 30px;
 }
 
+code {
+  background: #ddd;
+  padding: 3px 2px;
+  border-radius: 5px;
+}
+
 /*****************************************************************************/
 /*
 /* Syntax highlight
@@ -83,6 +89,12 @@ pre {
   padding: 10px;
   border: none;
   overflow: auto;
+}
+
+/* Reset style of code in the middle of the text */
+.highlight code {
+  background: #272822;
+  padding: 0;
 }
 
 /* Container */
