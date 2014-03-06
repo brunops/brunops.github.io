@@ -19,7 +19,7 @@ console.log(a.length); // 3 - only the elements of the collection are counted
 console.log(a.hey);    // 123 yup, it's there
 {% endhighlight %}
 
-Nothing really surprising, just a property of an object. Another way to add elements to an array, is to use the _.push_ method, which takes an element and appends it to the end of the array.
+Nothing really surprising, just a property of an object. Another way to add elements to an array, is to use the `.push` method, which takes an element and appends it to the end of the array.
 
 {% highlight javascript %}
 var a = [];
@@ -30,11 +30,11 @@ a.push(2); // [0, 1, 2]
 console.log(a.length); // 3 - same thing here..
 {% endhighlight %}
 
-Both methods are going to increase the special _.length_ property of the array, which stores how many elements there are in the collection.
+Both methods are going to increase the special `.length` property of the array, which stores how many elements there are in the collection.
 
-So arrays are objects. Would it be possible to use Array methods onto normal objects? Yes, sir. The really common example is, the magical _arguments_ variable that is silently passed in all function calls:
+So arrays are objects. Would it be possible to use Array methods onto normal objects? Yes, sir. The really common example is, the magical `arguments` variable that is silently passed in all function calls:
 
-###the arguments variable
+###the `arguments` variable
 {% highlight javascript %}
 function myFunction(arg1, arg2) {
   console.log("arg1 === arguments[0]? ", arg1 === arguments[0]);
@@ -72,22 +72,22 @@ console.log(a.push === Array.prototype.push);   // true
 console.log(a.slice === Array.prototype.slice); // true
 {% endhighlight %}
 
-Believe me, they are all there. What happens is, when a method is called in an Array, its _context_, in other words, the _this_ keyword inside the function is set as the _object instance_, the _var a_ in the examples.
+Believe me, they are all there. What happens is, when a method is called in an Array, its _context_, in other words, the `this` keyword inside the function is set as the _object instance_, the `var a` in the examples.
 
-"_So they are the same function, can we call the Array.prototype.push directly?_". Yes, but don't. Bad things will happen.
+"_So they are the same function, can we call the `Array.prototype.push` directly?_". Yes, but don't. Bad things will happen.
 
 {% highlight javascript %}
 Array.prototype.push(123); // bad bad code, don't do that!
 {% endhighlight %}
 
-Calling the _.push_ method directly will set the context as the object itself, the _Array.prototype_ object to be exact. So it'll be adding elements to the prototype of the Array, don't do that, it's not cool, bro.
+Calling the `.push` method directly will set the context as the object itself, the `Array.prototype` object to be exact. So it'll be adding elements to the prototype of the Array, don't do that, it's not cool, bro.
 
-"_Okay, how is this useful, then?_" Let's quickly talk about _.call_ and _.apply_.
+"_Okay, how is this useful, then?_" Let's quickly talk about `.call` and `.apply`.
 
-###the famous _.call_ and _.apply_
-These are methods that are defined inside the _Function_ prototype object. Yep, <a href="http://en.wikipedia.org/wiki/First-class_citizen" target="_blank">functions are first-class citizens</a>. The cool thing about them, is that they allow the definition of the context in which the function is being called, in other words, it's possible to define the value of **this**.
+###the famous `.call` and `.apply`
+These are methods that are defined inside the `Function` prototype object. Yep, <a href="http://en.wikipedia.org/wiki/First-class_citizen" target="_blank">functions are first-class citizens</a>. The cool thing about them, is that they allow the definition of the context in which the function is being called, in other words, it's possible to define the value of `this`.
 
-The difference between _.call_ and _.apply_ is the type of their arguments. The first one is the context for both, all others are the arguments that are going to be passed to the function itself. And the difference is that _.call_ receives a list of arguments, and _.apply_ receives an array of arguments. Fear not! See the example:
+The difference between `.call` and `.apply` is the type of their arguments. The first one is the context for both, all others are the arguments that are going to be passed to the function itself. And the difference is that `.call` receives a list of arguments, and `.apply` receives an array of arguments. Fear not! See the example:
 
 {% highlight javascript %}
 var obj = {
@@ -112,9 +112,9 @@ obj.sum.apply({ total: 50 }, [5, 5, 5, 5]); // outputs "70"
 obj.total; // still 12
 {% endhighlight %}
 
-How to remember which is which? "Array" ends up with "y", so is "apply". So there you go, works for me. Anyway, there's always the MDN website for <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call" target="_blank">.call</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply" target="_blank">.apply</a>.
+How to remember which is which? "Array" ends with "y", so does "apply". So there you go, works for me. Anyway, there's always the MDN website for <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call" target="_blank">.call</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply" target="_blank">.apply</a>.
 
-Going back to the _arguments_ as an Array issue, the usual way to solve this is to call the _.slice_ method from the Array prototype, which duplicates the result, leaving the original object intact. It is possible to directly call the Array method passing the _arguments_ as its context too.
+Going back to the `arguments` as an Array issue, the usual way to solve this is to call the `.slice` method from the Array prototype, which duplicates the result, leaving the original object intact. It is possible to directly call the Array method passing the `arguments` as its context too.
 
 {% highlight javascript %}
 function fn() {
@@ -133,9 +133,9 @@ fn(1, 2, 3); // 3, 3 and 2
 
 After this theory, let's talk about what this article is about..
 
-###fooling the Array _.push_ method
+###fooling the Array `.push` method
 
-So we learned about Arrays methods and how to call them on different objects. But how do they actually work? What does the methods take into consideration? Let's fool _.push_.
+So we learned about Arrays methods and how to call them on different objects. But how do they actually work? What does the methods take into consideration? Let's fool `.push`.
 
 {% highlight javascript %}
 var obj = {};
@@ -148,9 +148,9 @@ console.log(obj); // Object {0: 5, 1: 10, length: 2}
 
 It's possible to check that:
 
-- _obj_ is still an Object, but not an Array
-- the _.length_ property was added to _obj_
-- a key valued pair is added each time, where the key is the current _.length_ of the object when the method was called
+- `obj` is still an Object, but not an Array
+- the `.length` property was added to `obj`
+- a key valued pair is added each time, where the key is the current `.length` of the object when the method was called
 
 So what happens if we manipulate the values?
 
@@ -171,7 +171,7 @@ Array.prototype.push.call(obj, 50);
 console.log(obj); // Object {0: 30, 1: 40, 5: 50, length: 6}
 {% endhighlight %}
 
-We can see that the _.length_ property is taken into consideration and the previous values end up being overwritten because they happen to have the same key. With these tests, it's possible to especulate that the code for _.push_ method is something like
+We can see that the `.length` property is taken into consideration and the previous values end up being overwritten because they happen to have the same key. With these tests, it's possible to especulate that the code for `.push` method is something like
 
 {% highlight javascript %}
 Array.prototype.push = function() {
@@ -184,9 +184,9 @@ Array.prototype.push = function() {
 }
 {% endhighlight %}
 
-I bet there are many cases not being covered in the implementation, but that's the bigger picture. A new property is created were the key is the value of _.length_ and the value is the argument itself, and _.length_ is incremented.
+I bet there are many cases not being covered in the implementation, but that's the bigger picture. A new property is created were the key is the value of `.length` and the value is the argument itself, and `.length` is incremented.
 
-Why would somebody use that? I don't know. It's not quite foolling the _.push_ method, **that's more like fooling ourselves**. But it's just cool to realize how stuff works and how you can use methods from other objects. The dolphin eventually appears when we know this stuff.
+Why would somebody use that? I don't know. It's not quite foolling the `.push` method, **that's more like fooling ourselves**. But it's just cool to realize how stuff works and how you can use methods from other objects. The dolphin eventually appears when we know this stuff.
 
 
 
