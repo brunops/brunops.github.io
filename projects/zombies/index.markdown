@@ -6,7 +6,7 @@ image: zombies.png
 ---
 <link rel="stylesheet" href="css/style.css">
 
-HTML5 canvas game with zombies and explosions. Take a look at the code on the <a href="http://github.com/brunops/canvas-game" target="_blank">GitHub repository</a>. Read the <a href="/zombies">post about it</a> if you're interested.
+HTML5 canvas game with zombies and explosions. Take a look at the code on the <a href="http://github.com/brunops/canvas-game" target="_blank">GitHub repository</a>.
 
 Not much secret about it..
 
