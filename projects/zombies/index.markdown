@@ -24,12 +24,4 @@ Not much secret about it..
   </div>
 </div>
 
-<script src="js/ObjectPoolMaker.js"></script>
-<script src="js/Entity.js"></script>
-<script src="js/Player.js"></script>
-<script src="js/Projectile.js"></script>
-<script src="js/Explosion.js"></script>
-<script src="js/Zombie.js"></script>
-<script src="js/FlashMessage.js"></script>
-<script src="js/Game.js"></script>
 <script src="js/main.js"></script>
