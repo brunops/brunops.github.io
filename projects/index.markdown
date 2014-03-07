@@ -10,8 +10,8 @@ title: Projects
       <h2 class="list-item-title"><a href="/projects/tower-of-hanoi">Tower of Hanoi</a></h2>
     </header>
     <div class="list-item-content">
-      <p>Animated solution for <a href="http://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">Tower of Hanoi</a> puzzle in a canvas.</p>
-      <a href="/projects/tower-of-hanoi"><img alt="Bouncing Balls" src="/assets/images/tower-of-hanoi.png"></a>
+      <p>Animated solution for <a href="http://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">Tower of Hanoi</a> puzzle in a canvas. There is a <a href="/tower-of-hanoi">post about it</a> and <a href="/projects/tower-of-hanoi">the animation is here</a>.</p>
+      <a href="/projects/tower-of-hanoi"><img alt="Tower of Hanoi" src="/assets/images/tower-of-hanoi.png"></a>
     </div>
   </li>
 
