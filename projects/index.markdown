@@ -10,7 +10,7 @@ title: Projects
       <h2 class="list-item-title"><a href="/projects/zombies">Zombies</a></h2>
     </header>
     <div class="list-item-content">
-      <p>My first HTML5 canvas game. Zombies and explosions. Enjoy.</p>
+      <p>HTML5 canvas game. Zombies and explosions.</p>
       <a href="/projects/zombies"><img alt="Zombies canvas game" src="/assets/images/zombies.png"></a>
     </div>
   </li>
