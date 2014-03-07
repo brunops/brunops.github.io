@@ -4,6 +4,17 @@ title: Projects
 ---
 
 <ul class="list projects-list">
+  <!-- Zombies -->
+  <li class="list-item">
+    <header class="list-item-header">
+      <h2 class="list-item-title"><a href="/projects/zombies">Zombies</a></h2>
+    </header>
+    <div class="list-item-content">
+      <p>My first HTML5 canvas game. Zombies and explosions. Enjoy.</p>
+      <a href="/projects/zombies"><img alt="Zombies canvas game" src="/assets/images/zombies.png"></a>
+    </div>
+  </li>
+
   <!-- Tower of Hanoi -->
   <li class="list-item">
     <header class="list-item-header">
