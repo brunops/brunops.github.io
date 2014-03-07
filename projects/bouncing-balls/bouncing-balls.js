@@ -1,4 +1,10 @@
+/*
+ * Bouncing Balls, 2014
+ * Author: Bruno Sanches <brunopsanches@gmail.com>
+ * MIT Licensed
+ */
 window.requestAnimFrame = (function(){
+  'use strict';
   return  window.requestAnimationFrame       ||
           window.webkitRequestAnimationFrame ||
           window.mozRequestAnimationFrame    ||
@@ -8,6 +14,7 @@ window.requestAnimFrame = (function(){
 })();
 
 (function() {
+  'use strict';
 
   function Ball(x, y, radius, color) {
     this.init(x, y, radius, color);
@@ -105,7 +112,7 @@ window.requestAnimFrame = (function(){
     },
 
     startAnimateLoop: function() {
-      requestAnimFrame(BouncingBalls.startAnimateLoop);
+      window.requestAnimFrame(BouncingBalls.startAnimateLoop);
       BouncingBalls.tick();
     },
 
@@ -136,7 +143,7 @@ window.requestAnimFrame = (function(){
 
       // Particles
       var particlesToRemove = 0;
-      for (var i = 0; i < BouncingBalls.particles.length; ++i) {
+      for (i = 0; i < BouncingBalls.particles.length; ++i) {
         BouncingBalls.particles[i].tick();
         BouncingBalls.particles[i].draw(BouncingBalls.context);
         if (particlesToRemove === i && BouncingBalls.particles[i].y > BouncingBalls.canvas.height) {
@@ -149,7 +156,7 @@ window.requestAnimFrame = (function(){
       }
     },
 
-    handleNewCoords: function(ball, index) {
+    handleNewCoords: function(ball) {
       if (ball.x - ball.radius < 0) {
         ball.x = ball.radius;
         ball.invertHorizontal();
@@ -186,7 +193,7 @@ window.requestAnimFrame = (function(){
         BouncingBalls.particles.push(new Particle(ball.x, ball.y, 2, ball.color));
       }
 
-      delete BouncingBalls.balls.splice(index, 1);
+      BouncingBalls.balls.splice(index, 1);
     },
 
     collidedBallsIndex: function() {
