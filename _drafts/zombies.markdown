@@ -10,7 +10,7 @@ categories:
 ---
 I developed a HTML5 canvas game on my way building "stuff the moves", because zombies, right? There are lots of resources about it, I mixed a couple of them and ended up with a really interesting result, that you [can play here](/projects/zombies). Come back and read about it after having your brain eaten.
 
-GIF HERE
+[![Zombies Game](/assets/images/zombies.png)](/projects/zombies)
 
 It's impressive how much can be accomplished with a canvas and a bunch of sprites. In the end, it all boils down to managing a lot of objects with state and rendering them many many times. The difference between the tutorials I followed and my implementation is that I tried to separate the concerns in well defined objects instead of having it all in the global scope, but in the end it is the same thing, some sprites, hundreds of objects and a main loop.
 
