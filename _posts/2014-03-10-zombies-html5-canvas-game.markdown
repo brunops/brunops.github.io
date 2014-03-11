@@ -8,7 +8,7 @@ categories:
 - Game
 - Zombies
 image: zombies.png
-excerpt: This HTML5 canvas game was the last "thing that moves" that I built, because zombies, right? There are lots of resources about it, I mixed a couple of them and ended up with a really interesting result, that you <a href="/projects/zombies">can play here</a>. Come back and read about it after having your brain eaten.<a href="/projects/zombies"><img alt="Zombies Game" src="/assets/images/zombies.png"></a>
+excerpt: This HTML5 canvas game was the last "thing that moves" that I built, because zombies, right? There are lots of resources about it, I mixed a couple of them and ended up with a really interesting result, that you <a href="/projects/zombies">can play here</a>. Come back and read about it after having your brain eaten.<a href="/zombies-html5-canvas-game"><img alt="Zombies Game" src="/assets/images/zombies.png"></a>
 ---
 This HTML5 canvas game was the last "thing that moves" that I built, because zombies, right? There are lots of resources about it, I mixed a couple of them and ended up with a really interesting result, that you [can play here](/projects/zombies). Come back and read about it after having your brain eaten.
 
@@ -168,7 +168,7 @@ To give an even better sense of accomplishment, flash messages were added to giv
 They currently display how many points the player gets for each killing, notify the user when they level up, and when they power up. These instant feedbacks greatly improve the game experience.
 
 ##Conclusion
-Developing this game was an interesting experience. A lot of things that seemed like black magic last week, makes now perfect sense and are actually not hard. So try it out if you're interested.
+Developing this game was an interesting experience. A lot of things that seemed like black magic last week, makes now perfect sense and are actually not hard. Click here to see the <a href="http://github.com/brunops/zombies-game" target="_blank">GitHub repository</a> with full source.
 
 I know that there are a lot of gaming JavaScript frameworks out there, but I still didn't feel the need of it. And my opinion towards frameworks is getting worse everyday. But of course, I may use some in the future..
 
