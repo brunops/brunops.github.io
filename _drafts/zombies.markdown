@@ -115,7 +115,7 @@ Although Player and Zombie appear to be the same, there's a lot of code reuse wi
 There is a deep flaw with the previous code as I noticed later, but let's talk about the next topic first, the object pooler.
 
 ##Object Pooler
-I was having some performance issues when there were too many objects being rendered on the screen, and the scene was getting unmanageably laggy. And then, [I remembered the advice from an old pirate](http://www.youtube.com/watch?v=RWmzxyMf2cE), which consists in managing all your objects like a real captain and taking care of the undead, so the garbage collector beast won't come after you. You need to basically "kill your crew before ya sail" (makes sense only after you watch the video).
+I was having some performance issues when there were too many objects being rendered on the screen, and the scene was getting unmanageably laggy. And then, [I remembered an old advice from a pirate](http://www.youtube.com/watch?v=RWmzxyMf2cE), which consists in managing all your objects like a real captain and taking care of the undead, so the garbage collector beast won't come after you. You need to basically "kill your crew before ya sail" (makes sense only after you watch the video).
 
 [This Mozilla article](https://hacks.mozilla.org/2013/05/optimizing-your-javascript-game-for-firefox-os/) was really helpful on how to implement an object pooler. I tweaked a little bit to encapsulate it into the [ObjectPoolMaker](https://github.com/brunops/canvas-game/blob/master/js/ObjectPoolMaker.js), which with the help of closures can create an object pool for any constructor function instead of putting all the logic inside the constructor function itself.
 
@@ -124,11 +124,11 @@ The idea of the object pooler is to keep an array of available objects, which ex
 Turns out the performance issue was __not__ solved by the object pooler, the issue was due to a way more stupid reason. I kept the object pooler though, it's an interesting skill :)
 
 ##Entities
-Problem was that a new Image object was being instanciated for each new Entity. The sprite took only 1 or 2ms to load, but the requests add up quickly when a new Zombie is created 20% of the time, in a 60 frames per second game, it represents 12 requests per second! Plus 10 new Projectiles per second. So yeah, not smart to do 20 requests per second..
+Problem was that a new Image object was being instanciated for each new Entity. The sprite took only 1 or 2ms to load, but the requests add up quickly when a new Zombie is created 40% of the time, in a 60 frames per second game, it represents 24 requests per second! Plus 10 new Projectiles per second. So yeah, not smart to do 30 requests per second..
 
 The solution was really simple, the sprite image must be loaded only once per type of entity, and all the instances need only to manage is current frame position and that's all there is to it.
 
-The challenge was how to set properties on the constructor functions (Player, Zombie, Projectile..) from the parent object (Entity). Turns out it's possible to do such thing, and [this is the article](http://tobyho.com/2010/11/22/javascript-constructors-and/) that helped me do this. But let's see simple code sample of it.
+The challenge was how to set properties on the constructor functions, such as: `Player`, `Zombie`, `Projectile` and others, from the parent object `Entity`. Turns out it's possible to do such thing, and [this is the article](http://tobyho.com/2010/11/22/javascript-constructors-and/) that helped me do it. Let's see a simple code sample of it.
 
 {% highlight javascript %}
 function Parent() {
@@ -148,17 +148,19 @@ new Child();
 console.log(Child.hey); // "hello there"
 {% endhighlight %}
 
-It may seem a little confusing, but that allowed a lot of code reuse. And of course, loading each sprite only once.
+In `Parent` class, `this.constructor` refers to `Child`. It may seem a little confusing, but that allowed a lot of code reuse. And of course, loading each sprite only once.
 
 ##Game Mechanics
 
-I read tutorials to learn new things, but usually I don't follow them completely, I think that modifying the implementation a little bit and getting slightly different outcomes is a good way to notice if I actually understand it.
+I usually don't follow tutorials completely, I think that by modifying the implementation a little bit and getting a slightly different outcome is a good way to notice if I actually understand it. So I extended what I've read by adding some different game mechanics.
 
-Because the game gets extremely difficult in the end, I allowed the player to get levels after getting certain amounts of points defined by an arbitrary formula. Each level gained decreases the projectile cooldown by 25ms until it reaches another arbitrary limit, thus giving the player a feeling of accomplishment by shooting more projectiles per second. Every 10 levels, the player "Powers Up" and the power of the projectile increases by one, killing one more zombie for each shot. But yeah, the game is still impossible and doesn't have an end.
+Because the game gets extremely difficult in the end, I allowed the player to get levels after getting certain amounts of points defined by an arbitrary formula. Each level gained decreases the projectile cooldown by 25ms until it reaches another arbitrary limit, thus giving the player a feeling of accomplishment by shooting more projectiles per second.
 
-It's interesting how a lot of a game design is testing a lot of different constants that rule the game until it feels balanced enough. There's [an amazing presentation](http://vimeo.com/36579366) about how valuable this creation process is and how to improve it. I highly recommend watching it.
+Every 10 levels, the player "Powers Up" and the power of the projectile increases by one, killing one more zombie for each shot. But yeah, the game is still impossible and doesn't have an end.
 
-DIFFICULTY SECONDS BLA BLA 40%
+It's interesting how a lot of the game design was testing many different constants that rule the game until it feels balanced enough. There's [an amazing presentation](http://vimeo.com/36579366) about how valuable this creation process is and how to improve it. I highly recommend watching it.
+
+And the difficulty of the game is in how many zombies are spawned per second
 
 ##FlashMessages
 
