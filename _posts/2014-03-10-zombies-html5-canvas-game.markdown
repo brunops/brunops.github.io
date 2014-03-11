@@ -8,6 +8,7 @@ categories:
 - Game
 - Zombies
 image: zombies.png
+excerpt: This HTML5 canvas game was the last "thing that moves" that I built, because zombies, right? There are lots of resources about it, I mixed a couple of them and ended up with a really interesting result, that you <a href="/projects/zombies">can play here</a>. Come back and read about it after having your brain eaten.<a href="/projects/zombies"><img alt="Zombies Game" src="/assets/images/zombies.png"></a>
 ---
 This HTML5 canvas game was the last "thing that moves" that I built, because zombies, right? There are lots of resources about it, I mixed a couple of them and ended up with a really interesting result, that you [can play here](/projects/zombies). Come back and read about it after having your brain eaten.
 
