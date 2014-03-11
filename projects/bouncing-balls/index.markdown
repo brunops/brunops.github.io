@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: Bouncing Balls
 description: Balls bouncing in a canvas
 image: bouncing-balls.png

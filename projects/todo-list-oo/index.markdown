@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: TODO List
 ---
 <link rel="stylesheet" href="stylesheets/style.css">

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: Zombies
 description: HTML5 canvas game with zombies and explosions
 image: zombies.png
