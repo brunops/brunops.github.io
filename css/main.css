@@ -129,6 +129,10 @@ pre {
   margin: 10px 0;
 }
 
+.inner-content li.list-item {
+  margin-bottom: 60px;
+}
+
 .page-title {
   background: #114C86;
   padding: 8px 10px;
