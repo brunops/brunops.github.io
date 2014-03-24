@@ -357,6 +357,9 @@ window.requestAnimFrame = (function () {
         if (e.keyCode === 38 || e.keyCode === 40 || e.keyCode === 32) {
           e.preventDefault();
         }
+        if (!Game.isGameOver && e.keyCode === 80) {
+          Game.gamePause();
+        }
       }, false);
 
       document.addEventListener('keyup', function (e) {
@@ -374,6 +377,10 @@ window.requestAnimFrame = (function () {
 
       document.getElementById('play-again').addEventListener('click', function () {
         Game.reset();
+      }, false);
+
+      document.getElementById('return-play').addEventListener('click', function () {
+        Game.gamePause();
       }, false);
     },
 
@@ -424,6 +431,8 @@ window.requestAnimFrame = (function () {
       Game.verticalBoundary = 35;
       Game.horizontalBoundary = 5;
 
+      Game.isPaused = false;
+
       Game.isGameOver = false;
 
       Game.player = new Player(
@@ -437,8 +446,9 @@ window.requestAnimFrame = (function () {
       Game.explosionPool = new ObjectPoolMaker(Explosion, 100);
       Game.flashMessagePool = new ObjectPoolMaker(FlashMessage, 100);
 
-      document.getElementById('game-over-overlay').style.display = 'none';
+      document.getElementById('game-overlay').style.display = 'none';
       document.getElementById('game-over').style.display = 'none';
+      document.getElementById('game-paused').style.display = 'none';
     },
 
     loadBackground: function () {
@@ -453,6 +463,10 @@ window.requestAnimFrame = (function () {
     },
 
     update: function (modifier) {
+      if (Game.isPaused) {
+        return;
+      }
+
       Game.gameTime += modifier;
 
       Game.handleInput(modifier);
@@ -675,12 +689,27 @@ window.requestAnimFrame = (function () {
     },
 
     gameOver: function () {
-      document.getElementById('game-over-overlay').style.display = 'block';
+      document.getElementById('game-overlay').style.display = 'block';
       document.getElementById('game-over').style.display = 'block';
       Game.isGameOver = true;
     },
 
+    gamePause: function () {
+      Game.isPaused = !Game.isPaused;
+
+      var newDisplay = 'block';
+      if (document.getElementById('game-paused').style.display === 'block') {
+        newDisplay = 'none';
+      }
+      document.getElementById('game-overlay').style.display = newDisplay;
+      document.getElementById('game-paused').style.display = newDisplay;
+    },
+
     render: function () {
+      if (Game.isPaused) {
+        return;
+      }
+
       var i;
 
       // Render Background
