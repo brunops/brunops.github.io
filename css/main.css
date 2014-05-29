@@ -379,8 +379,8 @@ pre {
 }
 
 .about img {
-  border: 5px solid #ccc;
-  border-radius: 75px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
   width: 130px;
 }
 

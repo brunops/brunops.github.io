@@ -11,7 +11,7 @@
     <!-- Facebook -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}">
     <meta property="og:site_name" content="{{ site.name }}"/>
-    <meta property="og:image" content="{{ site.url }}/assets/images/{% if page.image %}{{ page.image }}{% else %}{{ 'brunops8.jpeg' }}{% endif %}">
+    <meta property="og:image" content="{{ site.url }}/assets/images/{% if page.image %}{{ page.image }}{% else %}{{ 'myself-small.jpeg' }}{% endif %}">
     <meta property="og:description" content="{% if page.description %}{{ page.description}}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:url" content="{{ site.url }}{{ page.url | remove:'index.html' }}">
     <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}blog{% endif %}"/>
@@ -43,7 +43,7 @@
       </ul>
       <div class="about">
         <a href="/">
-          <img src="/assets/images/brunops8.jpeg" alt="">
+          <img src="/assets/images/myself-small.jpeg" alt="">
           <h2 class="main-name">Bruno Sanches</h2>
           <h4>I code stuff</h4>
         </a>
