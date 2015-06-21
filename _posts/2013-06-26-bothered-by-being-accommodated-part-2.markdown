@@ -22,7 +22,7 @@ So in the beginning of 2013 I started to write down everything I wanted to do 
 2. Get a Masters degree
 3. Risk everything for something better while still able
 
-The common thing between them, which is the most important, is that all of them involves learning. I didn't think that everything would be successful, so here's what I did. I applied to a post-graduation subject as a special student (so I could still work), told my manager that I wanted to work with something different (should've done it before), and applied to an intensive Ruby on Rails course at San Francisco.
+The common thing between them, which is the most important, is that all of them involves learning. I didn't think that everything would be successful, so here's what I did. I applied to a post-graduation subject as a special student (so I could still work), told my manager that I wanted to work with something different (should've done it before), and applied to an intensive Ruby on Rails course in San Francisco.
 
 Then everything went better than expected. I was accepted on the Neural Networks subject, got the chance to change technologies at my company (many thanks to my manager, who helped me so much) and started to work with Java, and I was accepted at <a title="Dev Bootcamp - Learn Ruby on Rails in 9 weeks" href="http://devbootcamp.com/" target="_blank">DevBootcamp</a>.
 

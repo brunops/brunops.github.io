@@ -8,9 +8,9 @@ categories:
 ---
 Enough! That is enough! I got tired of doing the same things over again, and have finally gathered all the courage to make something about it. And this time it is for real. One of the hardest decisions ever.
 
-In 2010, I started working as an intern at <a title="CI&amp;T" href="http://ciandt.com" target="_blank">CI&amp;T</a>, a development offshore company in Brazil. I do love it and I am very grateful or everything I had there. It was my first job. It is the only job I've ever had.
+In 2010, I started working as an intern at <a title="CI&amp;T" href="http://ciandt.com" target="_blank">CI&amp;T</a>, a development offshore company in Brazil. I do love it and I am very grateful of everything I had there. It was my first job. It is the only job I've ever had.
 
-Back then, everything was new. I was still studying and never intended to work at a company. I wanted to be a researcher and a professor. I didn't have anything figured out yet (still don't). So you might ask "why did you started working?".
+Back then, everything was new. I was still studying and never intended to work at a company. I wanted to be a researcher and a professor. I didn't have anything figured out yet (still don't). So you might ask "why did you start working?".
 
 It was a big coincidence. I had friends that already worked there and heard great things about it, and as a student I fantasized about having my own money as well. One day, I was at the university and half an hour before, discovered that there would be a talk from CI&amp;T. So I went there thinking "It's only a talk, why not?".
 
@@ -26,9 +26,9 @@ Second week I was an official developer on a scrum team. Awesome. I never had re
 
 A year later, I graduated and got hired. My academic career was postponed. No regrets, I was learning a lot and really enjoying everything.
 
-Two years passed by, things started to get repetitive, but I was still motivated doing my best. Had the chance to work at the Argentina base with different people and culture. Worked really hard for around 40 days, it was a great experience.
+Two years passed by, things started to get repetitive, but I was still motivated doing my best. Had the chance to work at the Argentina base with different people in a different culture. Worked really hard for around 40 days, it was a great experience.
 
-Back to Brazil after a month and a half at Argentina, some months passed and I became a technical leader. Had the chance to give lessons of JavaScript to a class of 20+ people. Really awesome.
+Back to Brazil after a month and a half in Argentina, some months passed and I became a technical leader. Had the chance to give lessons of JavaScript to a class of 20+ people. Really awesome.
 
 Often times I wouldn't stay with the same team more than a month, teams were created and disassembled for projects. It's kinda demotivating to "invest" on the people of your team and suddenly be working with a bunch of new people again. The good side was meeting great new people. But there's no such thing as velocity this way.
 
@@ -36,4 +36,6 @@ Projects started to get repetitive. Things as "challenges", that usually motivat
 
 All this time, I never stopped studying, but although it should be the opposite, It's hard to have the same discipline when working for yourself.
 
-Three years later I was accommodated and unhappy. I started to read "<a title="Getting Things Done: The Art of Stress-Free Productivity" href="http://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0142000280" target="_blank">Getting things done</a>" and to put stuff in practice. Started to read motivational blogs and things on entrepreneurship. I start to motivate myself and the little things that I put into practice (still far from ideal) showed me how much I'm able to accomplish. This is the biggest motivator. To know your capabilities and limits. I was urging for a change.
+Three years later I was accommodated and unhappy. I started to read "<a title="Getting Things Done: The Art of Stress-Free Productivity" href="http://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0142000280" target="_blank">Getting things done</a>" and to put stuff in practice. Started to read motivational blogs and things on entrepreneurship. I started to motivate myself and the little things that I put into practice (still far from ideal) showed me how much I'm able to accomplish. This is the biggest motivator. To know your capabilities and limits. I was urging for a change.
+
+[Read the second part.](/bothered-by-being-accommodated-part-2)
