@@ -37,3 +37,5 @@ It was the hardest decision I've ever taken, I'm leaving my three year and a hal
 I'm pushing forward to have 100% focus on the DevBootcamp course. I'm going to be part of the cohort of August 26th. I'm leaving my job because of that, don't know what is going to happen. The only thing I know is that I'll do my best, and it will be fun.
 
 Really hard decisions, but I'm decided now and I won't look back. Wish me luck.
+
+[Read the first part.](/bothered-by-being-accommodated-part-1)
