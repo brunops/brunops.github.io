@@ -5,8 +5,6 @@ categories:
 - rant
 - modularity
 ---
-Modularity hides your shit
-
 Everybody writes shitty code. That's how we learn. Even that person that you think is awesome writes very bad code, and that doesn't make them less awesome.
 
 That's just the nature of software development. We're always learning with the systems that we're developing. No software is exactly the same as the previous one. Heck, that's the exact reason why it is being developed in the first place.
