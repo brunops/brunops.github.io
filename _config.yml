@@ -2,9 +2,10 @@ name: Bruno Sanches
 description: Bruno Sanches personal website with projects, notes and thoughts
 
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 permalink: /:title
 paginate: 5
 paginate_path: /page-:num
+plugins: [jekyll-paginate]
 
 url: http://brunops.org
