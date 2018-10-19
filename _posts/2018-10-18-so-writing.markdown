@@ -13,8 +13,9 @@ A couple rules here. It is paramount that no matter what I write has to be publi
 This in an attempt to get back at creating regularly. Practice. Quality doesn't matter at all, it's about quantity now. No one reads this anyway.
 
 <blockquote>
-  To honor the masters creatively is to compete with their attitude, not their results - that is, we must create, not revive
-  - someone, somewhere
+To honor the masters creatively is to compete with their attitude, not their results - that is, we must create, not revive
+
+-- someone, somewhere
 </blockquote>
 
 Done. That's what we're aiming for.
