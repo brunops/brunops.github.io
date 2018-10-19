@@ -2,7 +2,7 @@ name: Bruno Sanches
 description: Bruno Sanches personal website with projects, notes and thoughts
 
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 permalink: /:title
 paginate: 5
 paginate_path: /page-:num
