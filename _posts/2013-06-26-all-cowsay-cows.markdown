@@ -16,3 +16,11 @@ cowsay -l | awk '/^[^Cow]/ { for (i = 1; i < 20; i++) { if ($i) { system("cowsay
 {% endhighlight %}
 
 Each cow will be saying its own name. Enjoy :)
+
+EDIT:
+And here is an updated version that doesn't rely on a `for` loop (and also no `parallel`, which is probably even nicer, but wanted to do without it ¯\\\_(ツ)\_/¯)
+
+{% highlight bash %}
+cowsay -l | tr ' ' \\n | tail -n+5 | xargs -n1 -I@ sh -c 'cowsay -f@ @'
+{% endhighlight %}
+
