@@ -11,7 +11,7 @@ If you use node.js, you have encountered modules using both `module.exports` and
 
 Simply put, what is going to be exported is the `module.exports` object. That's it. The `exports` variable is just a reference to that object, and this causes a couple of small differences. Let's dig a little deeper. Starting with an example with the exact same results, and then showing the difference explicitly.
 
-####Example 1: `module.exports`
+#### Example 1: `module.exports`
 {% highlight javascript %}
 module.exports.hey = function () {
   console.log('hey');
@@ -22,7 +22,7 @@ module.exports.ho = function () {
 };
 {% endhighlight %}
 
-####Example 1: `exports`
+#### Example 1: `exports`
 {% highlight javascript %}
 exports.hey = function () {
   console.log('hey');
@@ -33,7 +33,7 @@ exports.ho = function () {
 };
 {% endhighlight %}
 
-####Example 1: Usage
+#### Example 1: Usage
 {% highlight javascript %}
 // it will import from module.js file (must be in the same directory)
 var obj = require('./module');
@@ -44,21 +44,21 @@ obj.ho();  // prints "ho"
 
 This will work just fine, it'll export the same object, and both will give you the exact same result, the same object was changed, no secrets here. Let's see the actual difference now.
 
-####Example 2: `module.exports`
+#### Example 2: `module.exports`
 {% highlight javascript %}
 module.exports = function () {
   console.log('let\'s go!');
 };
 {% endhighlight %}
 
-####Example 2: `exports`
+#### Example 2: `exports`
 {% highlight javascript %}
 exports = function () {
   console.log('let\'s go!');
 };
 {% endhighlight %}
 
-####Example: Usage
+#### Example: Usage
 {% highlight javascript %}
 // importing previous code from file named module.js (must be in the same directory)
 require('./module')(); // prints "let's go!"

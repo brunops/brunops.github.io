@@ -34,7 +34,7 @@ Both methods are going to increase the special `.length` property of the array, 
 
 So arrays are objects. Would it be possible to use Array methods onto normal objects? Yes, sir. The really common example is, the magical `arguments` variable that is silently passed in all function calls:
 
-###the `arguments` variable
+### the `arguments` variable
 {% highlight javascript %}
 function myFunction(arg1, arg2) {
   console.log("arg1 === arguments[0]? ", arg1 === arguments[0]);
@@ -84,7 +84,7 @@ Calling the `.push` method directly will set the context as the object itself, t
 
 "_Okay, how is this useful, then?_" Let's quickly talk about `.call` and `.apply`.
 
-###the famous `.call` and `.apply`
+### the famous `.call` and `.apply`
 These are methods that are defined inside the `Function` prototype object. Yep, <a href="http://en.wikipedia.org/wiki/First-class_citizen" target="_blank">functions are first-class citizens</a>. The cool thing about them, is that they allow the definition of the context in which the function is being called, in other words, it's possible to define the value of `this`.
 
 The difference between `.call` and `.apply` is the type of their arguments. The first one is the context for both, all others are the arguments that are going to be passed to the function itself. And the difference is that `.call` receives a list of arguments, and `.apply` receives an array of arguments. Fear not! See the example:
@@ -133,7 +133,7 @@ fn(1, 2, 3); // 3, 3 and 2
 
 After this theory, let's talk about what this article is about..
 
-###fooling the Array `.push` method
+### fooling the Array `.push` method
 
 So we learned about Arrays methods and how to call them on different objects. But how do they actually work? What does the methods take into consideration? Let's fool `.push`.
 
