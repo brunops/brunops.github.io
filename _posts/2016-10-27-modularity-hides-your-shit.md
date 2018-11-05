@@ -17,7 +17,7 @@ You'll still have to write Monoliths. And Monoliths will be bad. Just accept it.
 
 Good programmers go the extra mile. They notice patterns, sometimes completely unrelated to the Monolith and create a module to solve a specific problem. Write a stateless module with a very simple and clear interface that solves a problem and people will use it. Developers don't care about *your* edge cases, they care about *their own* edge cases. Good modules solve my current problem and allow me to move on. Great modules hide their shit so I don't have to deal with it ever again. They just work, no more, no less.
 
-After developing this great new module you can use it in your Monolith and publish it for the community to use. And that's the true test. People will adopt the module if it solves their problem with no headache. Otherwise it'll just die a quiet death and that's totally fine. It's Software natural selection at it's finest.
+After developing this great new module you can use it in your Monolith and publish it for the community to use. And that's the true test. People will adopt the module if it solves their problem with no headache. Otherwise it'll just die a quiet death and that's totally fine. It's Software natural selection at its finest.
 
 The option to that is that no module is created and all of yesterday's module code will be today's Monolith technical debt. And trust me, Monoliths do not need more technical debt.
 
